@@ -1,4 +1,4 @@
-# Spectral Bridge
+# Montgomery-RMT
 
 This repository contains a reproducible finite-block Montgomery--RMT
 comparison for zeta-zero spacing statistics, together with Lean 4 certificate
@@ -21,7 +21,7 @@ GUE limit theorem, or a physical Hamiltonian model.
 - `projects/montgomery-rmt/data/`: finite input and processed data used by the
   release artifact.
 - `projects/montgomery-rmt/outputs/`: finite metrics and paper figures.
-- `lean/SpectralBridge/MontgomeryRMT/`: Mathlib-only Lean formalization and
+- `lean/MontgomeryRMT/`: Mathlib-only Lean formalization and
   generated finite certificate data.
 - `projects/montgomery-rmt/certificates/`: certificate provenance manifest.
 

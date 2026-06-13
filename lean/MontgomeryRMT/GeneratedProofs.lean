@@ -1,8 +1,8 @@
-import SpectralBridge.MontgomeryRMT.Generated.Gate1GeneratedCounts
-import SpectralBridge.MontgomeryRMT.Generated.Gate1GeneratedResiduals
-import SpectralBridge.MontgomeryRMT.Generated.Gate1GeneratedSensitivity
-import SpectralBridge.MontgomeryRMT.Generated.Gate1GeneratedManifest
-import SpectralBridge.MontgomeryRMT.Gate1SensitivityCertificate
+import MontgomeryRMT.Generated.Gate1GeneratedCounts
+import MontgomeryRMT.Generated.Gate1GeneratedResiduals
+import MontgomeryRMT.Generated.Gate1GeneratedSensitivity
+import MontgomeryRMT.Generated.Gate1GeneratedManifest
+import MontgomeryRMT.Gate1SensitivityCertificate
 
 /-!
 # Proofs Over Generated Montgomery-RMT Certificates
@@ -11,7 +11,6 @@ This handwritten file proves finite claims from generated Lean data emitted by
 `projects/montgomery-rmt/scripts/export_lean_certificates.py`.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 theorem generated_gate0Default_count_sum_matches :
@@ -148,4 +147,3 @@ theorem generated_gue_beats_poisson_eq_156_of_162 :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

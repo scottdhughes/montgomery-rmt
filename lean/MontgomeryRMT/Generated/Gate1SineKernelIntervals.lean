@@ -6,7 +6,6 @@ The interval endpoints are rational numbers encoded as natural-number
 numerators over the common scale `gate1SineKernelIntervalScale`.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 namespace Generated
 
@@ -844,4 +843,3 @@ def gate1SineKernelIntervalsWellFormed : Bool :=
 
 end Generated
 end MontgomeryRMT
-end SpectralBridge

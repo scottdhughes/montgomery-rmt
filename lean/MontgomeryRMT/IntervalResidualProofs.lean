@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.Generated.Gate1IntervalResiduals
+import MontgomeryRMT.Generated.Gate1IntervalResiduals
 
 /-!
 # Interval Residual Proofs for Montgomery-RMT
@@ -8,7 +8,6 @@ certificates. The generated intervals are trusted inputs; Lean checks their
 well-formedness and the resulting squared-residual ordering.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 def intervalResidualGate0Lower : Nat :=
@@ -63,4 +62,3 @@ theorem interval_default_zeta_residual_chain :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

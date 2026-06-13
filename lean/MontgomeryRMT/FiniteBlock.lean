@@ -10,7 +10,6 @@ list-level structure used by downstream finite certificates; it does not
 certify that any decimal ordinate is a zero of the zeta function.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- A finite block of encoded ordinates or normalized spacings. -/
@@ -45,4 +44,3 @@ theorem finiteBlock_adjacentGaps_length (block : FiniteBlock) :
   length_adjacentGaps block.values
 
 end MontgomeryRMT
-end SpectralBridge

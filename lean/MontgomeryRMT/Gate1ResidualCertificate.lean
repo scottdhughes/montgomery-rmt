@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.RMSResidual
+import MontgomeryRMT.RMSResidual
 
 /-!
 # Gate 1 Residual Certificates
@@ -13,7 +13,6 @@ not certify the transcendental sine-kernel values or the original floating-point
 pipeline.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- Encoded squared-residual score from an exported finite CSV certificate. -/
@@ -76,4 +75,3 @@ theorem gate1ResidualScores_have_100_bins :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

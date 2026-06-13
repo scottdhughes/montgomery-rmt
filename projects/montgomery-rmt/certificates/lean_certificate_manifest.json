@@ -14,20 +14,20 @@
   "generated_at_utc": "2026-06-13T00:00:00+00:00",
   "generated_lean_files": [
     {
-      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedCounts.lean",
-      "sha256": "210ec3e5ca37e960f330818eb6b63e4806a2d6f17948935a286b7ddf6d30d0ea"
+      "path": "lean/MontgomeryRMT/Generated/Gate1GeneratedCounts.lean",
+      "sha256": "8326972072790e3f1520d2ff1348a41e880bb866fe13e5d3420be1eea087477f"
     },
     {
-      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedResiduals.lean",
-      "sha256": "e5080b0b3bb3a1b256ff650355c6b102421eb522a0eaeebcb3e23ebbc8e18366"
+      "path": "lean/MontgomeryRMT/Generated/Gate1GeneratedResiduals.lean",
+      "sha256": "65c92094fd00794a733fe47b91272c249821775804dfbe6de1ad1ca59e6c1e08"
     },
     {
-      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedSensitivity.lean",
-      "sha256": "0947d74de301afb045e7254cbc92197fd1e31e8962ff63258d9e78608d44e4fc"
+      "path": "lean/MontgomeryRMT/Generated/Gate1GeneratedSensitivity.lean",
+      "sha256": "50d780afebec807d090a62a47f452578930cfae40d95c2a48706aff6a2a1cb5c"
     },
     {
-      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedManifest.lean",
-      "sha256": "f5867a2c17494561625e48c0c0e92fd4f2ea57b92823aad8504fd61ecfe9b771"
+      "path": "lean/MontgomeryRMT/Generated/Gate1GeneratedManifest.lean",
+      "sha256": "07e933b08bca69444c48f1930adae2c132c3353a4977f16fe59c93053c01edb8"
     }
   ],
   "generation_command": "projects/montgomery-rmt/scripts/export_lean_certificates.py",
@@ -47,12 +47,12 @@
     "generated_at_utc": "2026-06-13T00:00:00+00:00",
     "generated_lean_files": [
       {
-        "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1SineKernelIntervals.lean",
-        "sha256": "254d496a5b93de0d6cf2ba8b56696b0abec8c37465978ab870c18abcaaa69d34"
+        "path": "lean/MontgomeryRMT/Generated/Gate1SineKernelIntervals.lean",
+        "sha256": "992cbb925aadc74d280630e608079df1ac0f73646eed61633274291b4163d758"
       },
       {
-        "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1IntervalResiduals.lean",
-        "sha256": "c78d4cb42abc564baa38292c9c30e5effcf0dfb887b8da1964ae7c10b3ed75b9"
+        "path": "lean/MontgomeryRMT/Generated/Gate1IntervalResiduals.lean",
+        "sha256": "2113e4e25a491d5d469ffbbfa19ef0cd55abff2f860034a8134a8a39951713aa"
       }
     ],
     "generation_command": "projects/montgomery-rmt/scripts/export_interval_residual_certificates.py",
@@ -64,23 +64,23 @@
     "source_inputs": [
       {
         "path": "projects/montgomery-rmt/scripts/export_interval_residual_certificates.py",
-        "sha256": "c4ab43ce9b2833f56c63de356eeeb52abf480fbee3097f93026a61349db8d238"
+        "sha256": "ff8ccbda69e3ca14fd46af7fb7cf0cd06839178df9587f5a143596357c4de404"
       },
       {
         "path": "projects/montgomery-rmt/outputs/gate1_metrics.json",
-        "sha256": "e0a893c4828191b74e6bf1764e6e374b93c6611b35be95f6442326eb0a3411fa"
+        "sha256": "5b0aea0e0db49762840489dbf25be5686d4d360be4b8ab4d7e4a293edf00b49d"
       },
       {
         "path": "projects/montgomery-rmt/data/processed/gate1_gate0_default_paircorr.csv",
-        "sha256": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8"
+        "sha256": "7edfb772ac76873b765aaa5b351d48b5fcddc6b716b084ad708e76764d03ac21"
       },
       {
         "path": "projects/montgomery-rmt/data/processed/gate1_block_1e12_10k_paircorr.csv",
-        "sha256": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316"
+        "sha256": "a3e8126576df0324263dd5f9ce4cc4d04b1cfded4f7fce921dc2087319825502"
       },
       {
         "path": "projects/montgomery-rmt/data/processed/gate1_block_1e21_10k_paircorr.csv",
-        "sha256": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649"
+        "sha256": "94ac0aee9657ee38bf5afc32e96825ba11c1d6098d2e11c18bad7798e4f187f4"
       }
     ],
     "summary": {
@@ -97,11 +97,11 @@
   "source_inputs": [
     {
       "path": "projects/montgomery-rmt/scripts/export_lean_certificates.py",
-      "sha256": "6964ecd55845580fdad41567648370d23e235b0d24e4461bd8f5a4f3ae128bc7"
+      "sha256": "a11052aa64ad76af456a5e0dbc38ace88f9b34b79981ed7e1b265c6d006b8062"
     },
     {
       "path": "projects/montgomery-rmt/outputs/gate1_metrics.json",
-      "sha256": "e0a893c4828191b74e6bf1764e6e374b93c6611b35be95f6442326eb0a3411fa"
+      "sha256": "5b0aea0e0db49762840489dbf25be5686d4d360be4b8ab4d7e4a293edf00b49d"
     },
     {
       "path": "projects/montgomery-rmt/outputs/gate1_sensitivity_metrics.json",
@@ -109,7 +109,7 @@
     },
     {
       "path": "projects/montgomery-rmt/data/processed/gate1_sensitivity_summary.csv",
-      "sha256": "bf05f823976934b95d896bc24fdf7bbefd90cf5155b680da798f842029aa390b"
+      "sha256": "d6b7e2702a97821ee30a6b9071363a70aa57b756462e1e5d794e9da1779ffbdd"
     },
     {
       "path": "projects/montgomery-rmt/data/manifest.json",
@@ -117,19 +117,19 @@
     },
     {
       "path": "projects/montgomery-rmt/outputs/hashes.json",
-      "sha256": "0fcbc57f3b4c40697a4552c38a37e6f90283f8966ed7bb7f2c965f92279c3ba3"
+      "sha256": "fc3466f69348dd493ef013fde23b95096ee3616491d2cc400247aff4f76ba47c"
     },
     {
       "path": "projects/montgomery-rmt/data/processed/gate1_gate0_default_paircorr.csv",
-      "sha256": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8"
+      "sha256": "7edfb772ac76873b765aaa5b351d48b5fcddc6b716b084ad708e76764d03ac21"
     },
     {
       "path": "projects/montgomery-rmt/data/processed/gate1_block_1e12_10k_paircorr.csv",
-      "sha256": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316"
+      "sha256": "a3e8126576df0324263dd5f9ce4cc4d04b1cfded4f7fce921dc2087319825502"
     },
     {
       "path": "projects/montgomery-rmt/data/processed/gate1_block_1e21_10k_paircorr.csv",
-      "sha256": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649"
+      "sha256": "94ac0aee9657ee38bf5afc32e96825ba11c1d6098d2e11c18bad7798e4f187f4"
     },
     {
       "path": "projects/montgomery-rmt/data/processed/gue_paircorr.csv",

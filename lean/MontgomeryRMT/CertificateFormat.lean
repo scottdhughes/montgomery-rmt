@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.RMSResidual
+import MontgomeryRMT.RMSResidual
 
 /-!
 # Finite Estimator Certificates
@@ -9,7 +9,6 @@ floating-point values in the paper; it gives a Lean-checkable target for future
 generated certificates.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- A finite estimator certificate for a fixed bin count. -/
@@ -53,4 +52,3 @@ theorem certificate_reportedResidualNumerator_nonnegative
   Nat.zero_le _
 
 end MontgomeryRMT
-end SpectralBridge

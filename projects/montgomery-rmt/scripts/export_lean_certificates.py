@@ -24,7 +24,7 @@ from typing import Any
 
 PROJECT = Path(__file__).resolve().parents[1]
 ROOT = PROJECT.parents[1]
-LEAN_OUT = ROOT / "lean" / "SpectralBridge" / "MontgomeryRMT" / "Generated"
+LEAN_OUT = ROOT / "lean" / "MontgomeryRMT" / "Generated"
 CERT_DIR = PROJECT / "certificates"
 CERT_MANIFEST = CERT_DIR / "lean_certificate_manifest.json"
 RESIDUAL_SCALE_NAT = 10**30
@@ -236,7 +236,7 @@ def sensitivity_vectors(metrics: dict[str, Any]) -> dict[str, list[bool]]:
 
 def render_counts_file(count_data: list[dict[str, Any]]) -> str:
     parts = [
-        "import SpectralBridge.MontgomeryRMT.PairCount",
+        "import MontgomeryRMT.PairCount",
         "",
         "/-!",
         "# Generated Gate 1 Count Data",
@@ -245,7 +245,6 @@ def render_counts_file(count_data: list[dict[str, Any]]) -> str:
         "This file contains data records only.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -281,7 +280,6 @@ def render_counts_file(count_data: list[dict[str, Any]]) -> str:
             "",
             "end Generated",
             "end MontgomeryRMT",
-            "end SpectralBridge",
             "",
         ]
     )
@@ -298,7 +296,6 @@ def render_residuals_file(residual_data: list[dict[str, Any]]) -> str:
         "This file contains data records only.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -331,7 +328,6 @@ def render_residuals_file(residual_data: list[dict[str, Any]]) -> str:
             "",
             "end Generated",
             "end MontgomeryRMT",
-            "end SpectralBridge",
             "",
         ]
     )
@@ -357,7 +353,6 @@ def render_sensitivity_file(vectors: dict[str, list[bool]]) -> str:
         "This file contains data records only.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -388,7 +383,6 @@ def render_sensitivity_file(vectors: dict[str, list[bool]]) -> str:
             "",
             "end Generated",
             "end MontgomeryRMT",
-            "end SpectralBridge",
             "",
         ]
     )
@@ -412,7 +406,6 @@ def render_manifest_file(
         "This file contains provenance strings only.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -433,7 +426,6 @@ def render_manifest_file(
         "",
         "end Generated",
         "end MontgomeryRMT",
-        "end SpectralBridge",
         "",
     ]
     return "\n".join(parts)

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite it using this metadata."
-title: "Spectral Bridge: finite pair-sum diagnostics for zeta zeros and the GUE sine kernel"
+title: "Montgomery-RMT: finite pair-sum diagnostics for zeta zeros and the GUE sine kernel"
 type: software
 authors:
   - family-names: "Hughes"

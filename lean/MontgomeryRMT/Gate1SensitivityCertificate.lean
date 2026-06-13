@@ -5,7 +5,6 @@ Finite Boolean-vector certificates for the saved Gate 1-B summary counts.
 They certify only the exported comparison-vector bookkeeping.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- Count `true` entries in a finite Boolean vector. -/
@@ -61,4 +60,3 @@ theorem total_control_configs_eq_162 :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

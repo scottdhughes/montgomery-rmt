@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.Histogram
+import MontgomeryRMT.Histogram
 
 /-!
 # Gate 1 Default Histogram Certificate
@@ -14,7 +14,6 @@ count and total accepted pair count. This does not certify the zeta-zero data
 or the floating-point RMS residual.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- Default low-block finite pair-count vector, recovered from the CSV density column. -/
@@ -48,4 +47,3 @@ theorem gate1DefaultHistogram_total :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

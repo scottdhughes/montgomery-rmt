@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.Histogram
+import MontgomeryRMT.Histogram
 
 /-!
 # Discrete Residual Bookkeeping
@@ -8,7 +8,6 @@ the finite natural-number layer used by exact certificates: nonnegativity of
 encoded squared-residual sums and the zero iff every encoded square is zero.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- Recursive zero predicate for encoded residual-square lists. -/
@@ -40,4 +39,3 @@ theorem residualNumerator_eq_zero_iff_allZero (residualSquares : List Nat) :
   exact sumNat_eq_zero_iff_allZero residualSquares
 
 end MontgomeryRMT
-end SpectralBridge

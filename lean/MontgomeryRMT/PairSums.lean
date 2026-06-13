@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.FiniteBlock
+import MontgomeryRMT.FiniteBlock
 
 /-!
 # Pair Sums
@@ -8,7 +8,6 @@ records the exact finite range used by the computational estimator:
 positive width, bounded by `kMax`, and contained in the spacing list.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- A small explicit natural-number list sum. -/
@@ -89,4 +88,3 @@ theorem pairSum_pos_of_allPositive_window
   exact sumNat_pos_of_allPositive ((spacings.drop start).take width) hpos hlen
 
 end MontgomeryRMT
-end SpectralBridge

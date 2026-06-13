@@ -6,7 +6,6 @@ Scores are scaled squared-residual sums from exported CSV decimal columns.
 This file contains data records only.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 namespace Generated
 
@@ -59,4 +58,3 @@ def gate1GeneratedResidualCertificates : List GeneratedResidualData :=
 
 end Generated
 end MontgomeryRMT
-end SpectralBridge

@@ -30,7 +30,7 @@ from typing import Any
 
 PROJECT = Path(__file__).resolve().parents[1]
 ROOT = PROJECT.parents[1]
-LEAN_ROOT = ROOT / "lean" / "SpectralBridge" / "MontgomeryRMT"
+LEAN_ROOT = ROOT / "lean" / "MontgomeryRMT"
 LEAN_OUT = LEAN_ROOT / "Generated"
 CERT_MANIFEST = PROJECT / "certificates" / "lean_certificate_manifest.json"
 
@@ -277,7 +277,6 @@ def render_sine_intervals_file(
         "numerators over the common scale `gate1SineKernelIntervalScale`.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -332,7 +331,6 @@ def render_sine_intervals_file(
             "",
             "end Generated",
             "end MontgomeryRMT",
-            "end SpectralBridge",
             "",
         ]
     )
@@ -345,7 +343,7 @@ def render_residuals_file(
     max_k: int,
 ) -> str:
     parts = [
-        "import SpectralBridge.MontgomeryRMT.Generated.Gate1SineKernelIntervals",
+        "import MontgomeryRMT.Generated.Gate1SineKernelIntervals",
         "",
         "/-!",
         "# Generated Gate 1 Interval Residual Bounds",
@@ -354,7 +352,6 @@ def render_residuals_file(
         "Residual bounds are squared-residual sums over the default 100 bins.",
         "-/",
         "",
-        "namespace SpectralBridge",
         "namespace MontgomeryRMT",
         "namespace Generated",
         "",
@@ -403,7 +400,6 @@ def render_residuals_file(
             "",
             "end Generated",
             "end MontgomeryRMT",
-            "end SpectralBridge",
             "",
         ]
     )

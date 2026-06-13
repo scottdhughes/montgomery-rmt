@@ -1,5 +1,5 @@
-import SpectralBridge.MontgomeryRMT.Gate1DefaultCertificate
-import SpectralBridge.MontgomeryRMT.PairCount
+import MontgomeryRMT.Gate1DefaultCertificate
+import MontgomeryRMT.PairCount
 
 /-!
 # Gate 1 Count Certificates
@@ -10,7 +10,6 @@ control count vectors are recovered from the same exported density columns by
 nearest-integer decoding of floating text.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- High Odlyzko block `10^12 + 1` through `10^12 + 10^4`, default pair-count vector. -/
@@ -254,4 +253,3 @@ theorem gate1PaperFacingPairCounts_nonnegative :
     allNonnegative_nat _⟩
 
 end MontgomeryRMT
-end SpectralBridge

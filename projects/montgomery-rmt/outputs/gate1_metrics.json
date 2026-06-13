@@ -142,12 +142,12 @@
   ],
   "generated_at_utc": "2026-06-13T00:00:00+00:00",
   "hashes": {
-    "data/processed/gate1_block_1e12_10k_paircorr.csv": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316",
-    "data/processed/gate1_block_1e12_10k_spacings.csv": "9c111bcbf96b9711a0930992445c66ffc5cacccda1dfe4509cd6f9f0a8ebad62",
-    "data/processed/gate1_block_1e21_10k_paircorr.csv": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649",
-    "data/processed/gate1_block_1e21_10k_spacings.csv": "09289a7bd3748a02c4be6280d330b5271fe69cf9ed9e12d5fa9fa7fd6c9dd2b5",
-    "data/processed/gate1_gate0_default_paircorr.csv": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8",
-    "data/processed/gate1_gate0_default_spacings.csv": "3100e3181b022cd24a3511fc836fed2f1b18c1a4b3615c0dc883ec56b642623e",
+    "data/processed/gate1_block_1e12_10k_paircorr.csv": "a3e8126576df0324263dd5f9ce4cc4d04b1cfded4f7fce921dc2087319825502",
+    "data/processed/gate1_block_1e12_10k_spacings.csv": "00617dfe692b242a03f126a148fe5bbc8dfdb0ba27a95e348c20679a11506749",
+    "data/processed/gate1_block_1e21_10k_paircorr.csv": "94ac0aee9657ee38bf5afc32e96825ba11c1d6098d2e11c18bad7798e4f187f4",
+    "data/processed/gate1_block_1e21_10k_spacings.csv": "ba89a872208bcd9ab61978e8f4041fb68327a2f62e03a154ca1982805eafdc52",
+    "data/processed/gate1_gate0_default_paircorr.csv": "7edfb772ac76873b765aaa5b351d48b5fcddc6b716b084ad708e76764d03ac21",
+    "data/processed/gate1_gate0_default_spacings.csv": "7f74a67de08e63df5cb43d4ac67819bfa81986a564ad27f376902a2225b27704",
     "outputs/figures/gate1_paircorr_low_vs_high.png": "81234e7e9c7a4fcdf1006ee8a3695cdb2ce6e2c11aec964cd5221fcec0533369",
     "outputs/figures/gate1_sine_kernel_residuals.png": "455c8d65bf0e7600f547b9c5e253e257ea2e80654553c88be6c9b9ed3116bb5f",
     "outputs/figures/gate1_spacing_low_vs_high.png": "c14bfcce594aeeac660a37fec3bd95dfed5bf0e928437f7811bb9fab91956a91"

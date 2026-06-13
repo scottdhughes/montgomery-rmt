@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.Histogram
+import MontgomeryRMT.Histogram
 
 /-!
 # Pair-Count Certificates
@@ -8,7 +8,6 @@ pair sums in the Montgomery-RMT estimator. These statements certify only the
 encoded finite count layer.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- The triangular number `1 + ... + K`, encoded over natural numbers. -/
@@ -95,4 +94,3 @@ theorem candidatePairCount_10000_50 :
   native_decide
 
 end MontgomeryRMT
-end SpectralBridge

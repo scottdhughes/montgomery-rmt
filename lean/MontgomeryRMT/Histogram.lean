@@ -1,4 +1,4 @@
-import SpectralBridge.MontgomeryRMT.PairSums
+import MontgomeryRMT.PairSums
 
 /-!
 # Histogram Bookkeeping
@@ -7,7 +7,6 @@ Build-checked finite histogram certificates. This file certifies structural
 properties of binned count vectors, not floating-point bin arithmetic.
 -/
 
-namespace SpectralBridge
 namespace MontgomeryRMT
 
 /-- A finite histogram certificate with a declared number of bins. -/
@@ -38,4 +37,3 @@ theorem inDiscreteBin_unique (binOf : Nat → Nat) (x j k : Nat)
   rw [← hj, hk]
 
 end MontgomeryRMT
-end SpectralBridge
