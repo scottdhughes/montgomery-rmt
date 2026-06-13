@@ -1,0 +1,157 @@
+{
+  "boundary": {
+    "certifies": "finite generated count, residual-score, sensitivity-vector, and provenance data",
+    "does_not_certify": [
+      "Odlyzko ordinates are zeta zeros",
+      "raw floating-point arithmetic",
+      "transcendental sine-kernel evaluation",
+      "Riemann hypothesis",
+      "Montgomery pair correlation",
+      "GUE limits",
+      "physics claims"
+    ]
+  },
+  "generated_at_utc": "2026-06-13T00:00:00+00:00",
+  "generated_lean_files": [
+    {
+      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedCounts.lean",
+      "sha256": "210ec3e5ca37e960f330818eb6b63e4806a2d6f17948935a286b7ddf6d30d0ea"
+    },
+    {
+      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedResiduals.lean",
+      "sha256": "e5080b0b3bb3a1b256ff650355c6b102421eb522a0eaeebcb3e23ebbc8e18366"
+    },
+    {
+      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedSensitivity.lean",
+      "sha256": "0947d74de301afb045e7254cbc92197fd1e31e8962ff63258d9e78608d44e4fc"
+    },
+    {
+      "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1GeneratedManifest.lean",
+      "sha256": "f5867a2c17494561625e48c0c0e92fd4f2ea57b92823aad8504fd61ecfe9b771"
+    }
+  ],
+  "generation_command": "projects/montgomery-rmt/scripts/export_lean_certificates.py",
+  "git_commit": "release-artifact-v0.1.0",
+  "interval_residual_certificate": {
+    "boundary": {
+      "certifies": "finite squared-residual ordering from exported histogram counts and Arb-backed sine-kernel interval enclosures",
+      "does_not_certify": [
+        "Odlyzko ordinates are zeta zeros",
+        "raw floating-point arithmetic",
+        "Riemann hypothesis",
+        "Montgomery pair correlation",
+        "GUE limits",
+        "physics claims"
+      ]
+    },
+    "generated_at_utc": "2026-06-13T00:00:00+00:00",
+    "generated_lean_files": [
+      {
+        "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1SineKernelIntervals.lean",
+        "sha256": "254d496a5b93de0d6cf2ba8b56696b0abec8c37465978ab870c18abcaaa69d34"
+      },
+      {
+        "path": "lean/SpectralBridge/MontgomeryRMT/Generated/Gate1IntervalResiduals.lean",
+        "sha256": "c78d4cb42abc564baa38292c9c30e5effcf0dfb887b8da1964ae7c10b3ed75b9"
+      }
+    ],
+    "generation_command": "projects/montgomery-rmt/scripts/export_interval_residual_certificates.py",
+    "git_commit": "release-artifact-v0.1.0",
+    "precision_bits": 336,
+    "precision_dps": 100,
+    "python_flint_version": "0.8.0",
+    "sine_kernel_interval_scale": 100000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "source_inputs": [
+      {
+        "path": "projects/montgomery-rmt/scripts/export_interval_residual_certificates.py",
+        "sha256": "c4ab43ce9b2833f56c63de356eeeb52abf480fbee3097f93026a61349db8d238"
+      },
+      {
+        "path": "projects/montgomery-rmt/outputs/gate1_metrics.json",
+        "sha256": "e0a893c4828191b74e6bf1764e6e374b93c6611b35be95f6442326eb0a3411fa"
+      },
+      {
+        "path": "projects/montgomery-rmt/data/processed/gate1_gate0_default_paircorr.csv",
+        "sha256": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8"
+      },
+      {
+        "path": "projects/montgomery-rmt/data/processed/gate1_block_1e12_10k_paircorr.csv",
+        "sha256": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316"
+      },
+      {
+        "path": "projects/montgomery-rmt/data/processed/gate1_block_1e21_10k_paircorr.csv",
+        "sha256": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649"
+      }
+    ],
+    "summary": {
+      "bin_count": 100,
+      "block_1e12_lower_gt_block_1e21_upper": true,
+      "blocks": [
+        "gate0_default",
+        "block_1e12_10k",
+        "block_1e21_10k"
+      ],
+      "gate0_lower_gt_block_1e12_upper": true
+    }
+  },
+  "source_inputs": [
+    {
+      "path": "projects/montgomery-rmt/scripts/export_lean_certificates.py",
+      "sha256": "6964ecd55845580fdad41567648370d23e235b0d24e4461bd8f5a4f3ae128bc7"
+    },
+    {
+      "path": "projects/montgomery-rmt/outputs/gate1_metrics.json",
+      "sha256": "e0a893c4828191b74e6bf1764e6e374b93c6611b35be95f6442326eb0a3411fa"
+    },
+    {
+      "path": "projects/montgomery-rmt/outputs/gate1_sensitivity_metrics.json",
+      "sha256": "6f6d0da4b9a08930743132506fee1665aa91117600375a52c32f72557839b3bb"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/gate1_sensitivity_summary.csv",
+      "sha256": "bf05f823976934b95d896bc24fdf7bbefd90cf5155b680da798f842029aa390b"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/manifest.json",
+      "sha256": "1f31fc110a297ce9cd85cbc77f0d013a1b78b9b997882fb8a71d5f826349ec34"
+    },
+    {
+      "path": "projects/montgomery-rmt/outputs/hashes.json",
+      "sha256": "0fcbc57f3b4c40697a4552c38a37e6f90283f8966ed7bb7f2c965f92279c3ba3"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/gate1_gate0_default_paircorr.csv",
+      "sha256": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/gate1_block_1e12_10k_paircorr.csv",
+      "sha256": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/gate1_block_1e21_10k_paircorr.csv",
+      "sha256": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/gue_paircorr.csv",
+      "sha256": "663db264539564873220b17557a7a0432fa93d110c6162dccd5b6356b5a810a0"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/goe_paircorr.csv",
+      "sha256": "e56a02bf014d1808ebdf4eac818e7123edf87fe8ad687f0e2f0749936aadc90b"
+    },
+    {
+      "path": "projects/montgomery-rmt/data/processed/poisson_paircorr.csv",
+      "sha256": "35e35b292ac4cbba4d57dbf4176b0fb98fbfe8c94ca6c8cd45c2de62341371cd"
+    }
+  ],
+  "summary": {
+    "block_1e21_vs_low_true_count": 27,
+    "count_certificate_count": 6,
+    "gue_beats_poisson_total": 162,
+    "gue_beats_poisson_true_count": 156,
+    "primary_high_vs_low_true_count": 27,
+    "residual_certificate_count": 6,
+    "sensitivity_summary_csv_rows": 432,
+    "strict_three_block_monotone_true_count": 18
+  }
+}

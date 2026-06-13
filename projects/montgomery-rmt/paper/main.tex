@@ -1,0 +1,201 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\urlstyle{same}
+
+\newcommand{\FigureOrPlaceholder}[2]{%
+  \begin{figure}[htbp]
+    \centering
+    \IfFileExists{#1}{%
+      \includegraphics[width=0.9\linewidth]{#1}%
+    }{%
+      \fbox{\parbox{0.85\linewidth}{Figure file not found: \path{#1}.}}%
+    }%
+    \caption{#2}
+  \end{figure}
+}
+
+\title{Finite Pair-Sum Diagnostics for Zeta Zeros and the GUE Sine Kernel}
+\author{Scott D. Hughes\\
+Independent researcher\\
+\href{mailto:v@deltagray.com}{v@deltagray.com}}
+\date{June 12, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We compare finite local statistics of Riemann zeta zeros with the sine-kernel pair-correlation law associated with GUE random matrices.  The comparison uses three blocks of 10,000 ordinates: the first 10,000 Sage/Odlyzko zeros, an Odlyzko block beginning at zero number $10^{12}+1$, and an Odlyzko block beginning at zero number $10^{21}+1$.  Each block is locally unfolded, converted to finite positive pair sums, binned on a fixed window, and compared with the sine-kernel density by a discrete RMS residual over bin centers.  Finite GUE, GOE, and Poisson samples are included as controls.  In the default configuration, the zeta-block residuals are
+\[
+0.0479815015085 > 0.0399492422825 > 0.0369651551678.
+\]
+Across $27$ sensitivity configurations, both high blocks have smaller residuals than the initial block, while strict three-block monotonicity holds in $18$ cases.  GUE has a smaller residual than Poisson in $156$ of $162$ matched control comparisons.  Supplementary Lean certificates check finite count and residual-summary claims, and an Arb-backed interval certificate checks the default residual ordering from rational enclosures of the sine-kernel bin values.  These computations are consistent with the Montgomery--Odlyzko--GUE numerical picture, but they are finite comparisons under a specified estimator; they are not a proof of Montgomery's pair-correlation conjecture, the Riemann hypothesis, or the GUE conjecture.
+\end{abstract}
+
+\section{Introduction}
+
+Montgomery's pair-correlation program studies fine-scale correlations among ordinates of non-trivial zeros of the Riemann zeta function.  Under the Riemann hypothesis, Montgomery proved a conditional result with restricted Fourier support and formulated a conjectural limiting pair-correlation law.  In the usual local normalization, the conjectural density for positive scaled spacings is
+\[
+  g(u)=1-\left(\frac{\sin \pi u}{\pi u}\right)^2.
+\]
+This is also the bulk two-point correlation density for the Gaussian Unitary Ensemble (GUE), making random matrix theory a natural comparison point for zeta-zero statistics \cite{montgomery1973pair,mehtaRandomMatrices}.
+
+Odlyzko's numerical work is the classical benchmark for this comparison.  His 1987 study used the first $10^5$ zeros and a high block near zero number $10^{12}$, and reported strong agreement with GUE predictions while also documenting lower-order effects and deviations \cite{odlyzko1987spacings}.  Later large-scale computations have used high zero data to test related asymptotic and random-matrix predictions for the zeta function on the critical line \cite{hiaryOdlyzko2010criticalLine}.  The present note is much smaller in scale.  Its purpose is not to compete with those computations, but to examine a compact finite-sample comparison with explicit control ensembles and sensitivity checks.
+
+The contribution is methodological and evidential rather than theorem-proving.  We define an explicit finite estimator, apply it uniformly to three zeta-zero blocks and to control ensembles, document the data sources, and report how the conclusion changes across a small grid of histogram and cutoff parameters.  The strongest supported observation is high-vs-low robustness: under this estimator and the tested grid, the two high Odlyzko blocks have smaller discrete RMS residuals to the sine-kernel reference than the first 10,000 zeros.
+
+No asymptotic theorem is claimed.  The computations below do not prove Montgomery's conjecture, the Riemann hypothesis, the GUE conjecture, or the existence of a physical Hamiltonian with zeta zeros as its spectrum.  They report finite numerical evidence under stated data, floating-point, and estimator assumptions.
+
+\section{Data}
+
+The experiment uses three finite blocks of ordinates $\gamma$ for zeros $1/2+i\gamma$:
+\begin{itemize}
+  \item \textbf{Initial block}: the first 10,000 ordinates from Sage's optional Odlyzko zero database \cite{sageOdlyzkoDatabase};
+  \item \textbf{$10^{12}$ block}: the Odlyzko table block for zeros numbered $10^{12}+1$ through $10^{12}+10^4$ \cite{odlyzkoZetaTables};
+  \item \textbf{$10^{21}$ block}: the Odlyzko table block for zeros numbered $10^{21}+1$ through $10^{21}+10^4$ \cite{odlyzkoZetaTables}.
+\end{itemize}
+Each block contains 10,000 ordinates and hence 9,999 adjacent spacings.  The Sage documentation states that its optional Odlyzko database contains the imaginary parts of the first 2,001,052 zeros with accuracy about $4\cdot 10^{-9}$ \cite{sageOdlyzkoDatabase}.  The high blocks are taken from Odlyzko's published table archive.  Source paths, row counts, precision notes, and SHA-256 hashes are recorded with the computational materials.  These records document provenance for this computation; they are not formal certificates that the listed numbers are zeros.
+
+\section{Finite estimator}
+
+Let
+\[
+  \mathcal D=(\gamma_1,\ldots,\gamma_N),\qquad
+  0<\gamma_1<\cdots<\gamma_N
+\]
+be one finite block of ordinates, and put $m=N-1$.  We locally unfold adjacent gaps by
+\[
+  s_i=(\gamma_{i+1}-\gamma_i)\frac{\log(\gamma_i/(2\pi))}{2\pi},
+  \qquad 1\leq i\leq m.
+\]
+This is the standard first-order mean-spacing normalization near height $\gamma_i$.
+
+The pair-correlation diagnostic uses positive finite sums of consecutive normalized spacings.  For a cutoff $k_{\max}$ and a window $u_{\max}$, define
+\[
+  S_{i,k}=s_i+s_{i+1}+\cdots+s_{i+k-1},
+  \qquad 1\leq k\leq k_{\max},\quad 1\leq i\leq m-k+1,
+\]
+and record only sums that land in the finite histogram window.  This is a finite positive-gap estimator; it is not Montgomery's limiting pair-correlation function.
+
+For bin width $\Delta$, let $B=\lfloor u_{\max}/\Delta\rfloor$ and let $u_j=(j-1/2)\Delta$ for $1\leq j\leq B$.  The binned density estimator is
+\[
+  \widehat g_{\mathcal D,\Delta,u_{\max},k_{\max}}(u_j)
+  =
+  \frac{\#\{(i,k):S_{i,k}\in [(j-1)\Delta,j\Delta)\}}{N\Delta}.
+\]
+The histogram bins are half-open intervals $[(j-1)\Delta,j\Delta)$, $1\leq j\leq B$.  The accumulation loop may encounter sums up to the configured window, but the histogram itself records only sums assigned to one of these bins.  Thus a sum exactly equal to $u_{\max}$ is excluded by the bin-index check.  The denominator $N\Delta$ normalizes by the number of ordinates in the block and by the bin width.  The sine-kernel reference is evaluated at bin centers, with the removable value $g(0)=0$.
+
+For a fixed configuration $(\Delta,u_{\max},k_{\max})$, we compare the estimator to the reference by the finite discrete RMS residual
+\[
+  D_{\Delta,u_{\max},k_{\max}}(\mathcal D)=
+  \left(
+    \frac{1}{B}\sum_{j=1}^B
+    \left(\widehat g_{\mathcal D,\Delta,u_{\max},k_{\max}}(u_j)-g(u_j)\right)^2
+  \right)^{1/2}.
+\]
+The tables report this number as the RMS residual; generated reports and older internal artifacts may abbreviate the same quantity as ``L2.''  It is not a continuum $L^2$ norm.
+
+\section{Controls}
+
+The random-matrix controls use finite GOE and GUE samples.  For each matrix sample, eigenvalues are sorted, a central bulk fraction is retained, adjacent bulk spacings are divided by their sample mean, and the same finite pair-sum histogram is applied.  The default simulations use matrix size $80$, $25$ samples, bulk fraction $0.6$, base seed $1729$, GOE seed $1729$, and GUE seed $1730$.  The sensitivity study varies matrix size over $60,80,120$ and sample count over $15,25$.
+
+GUE is the relevant sine-kernel comparison ensemble.  GOE is included as a contrast ensemble.  The Poisson control draws independent exponential spacings of mean $1$ and serves as a negative control, since it does not have sine-kernel level repulsion near zero.
+
+\section{Results}
+
+\subsection{Default comparison}
+
+The default configuration uses $\Delta=0.05$, $u_{\max}=5$, and $k_{\max}=50$.  The zeta-block residuals are:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Block & RMS residual to $g$ & Description \\
+\midrule
+Initial block & $0.0479815015085$ & first 10,000 Sage/Odlyzko zeros \\
+$10^{12}$ block & $0.0399492422825$ & zeros $10^{12}+1$ through $10^{12}+10^4$ \\
+$10^{21}$ block & $0.0369651551678$ & zeros $10^{21}+1$ through $10^{21}+10^4$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Thus the default configuration satisfies
+\[
+  D(\text{initial})>D(10^{12}\text{ block})>D(10^{21}\text{ block}).
+\]
+This monotone ordering is a finite diagnostic result for the stated estimator and default parameters.
+
+\FigureOrPlaceholder{../outputs/figures/gate1_paircorr_low_vs_high.png}{Default finite pair-sum density estimates for the three zeta blocks and control samples, with $\Delta=0.05$, $u_{\max}=5$, and $k_{\max}=50$.  GUE is the sine-kernel comparison ensemble, GOE is a contrast ensemble, and Poisson is the negative control.}
+
+\FigureOrPlaceholder{../outputs/figures/gate1_sine_kernel_residuals.png}{Default residuals, estimator minus sine-kernel reference, for the three zeta blocks and finite GUE/GOE/Poisson controls, with $\Delta=0.05$, $u_{\max}=5$, and $k_{\max}=50$.}
+
+\clearpage
+
+\subsection{Sensitivity to binning and cutoff parameters}
+
+We tested the $27$ configurations obtained from
+\[
+  \Delta\in\{0.025,0.05,0.1\},\qquad
+  u_{\max}\in\{3,5,8\},\qquad
+  k_{\max}\in\{25,50,100\}.
+\]
+In all $27$ configurations, both high blocks have smaller RMS residuals than the initial block.  Strict three-block monotonicity,
+\[
+  D(\text{initial})>D(10^{12}\text{ block})>D(10^{21}\text{ block}),
+\]
+holds in $18$ of the $27$ configurations.  The strongest conclusion is therefore high-vs-low robustness, not a parameter-free monotonic law from $10^{12}$ to $10^{21}$.
+
+\FigureOrPlaceholder{../outputs/figures/paper_gate1_sensitivity_high_minus_low_l2.png}{Sensitivity-grid comparison of high-minus-low discrete RMS residuals across $27$ zeta configurations.  Negative values mean the primary high block has smaller residual than the initial block for that histogram/window/cutoff configuration.}
+
+\FigureOrPlaceholder{../outputs/figures/paper_gate1_sensitivity_l2_by_bin_width.png}{Median discrete RMS residual by bin width for the initial block and the two high Odlyzko blocks, aggregated over $u_{\max}\in\{3,5,8\}$ and $k_{\max}\in\{25,50,100\}$.}
+
+\clearpage
+
+\subsection{RMT and Poisson controls}
+
+In the default comparison, finite GUE has a smaller residual than Poisson:
+\[
+  D(\mathrm{GUE})=0.126765270135,
+  \qquad
+  D(\mathrm{Poisson})=0.261767716519.
+\]
+Across the sensitivity grid, GUE has a smaller residual than Poisson in $156$ of $162$ matched comparisons.  The finite GUE residual is not expected to be small in an absolute sense: the simulations use modest matrix sizes, a simple bulk extraction, and the same finite histogram estimator.  Its role here is primarily as a sanity check against the Poisson negative control.
+
+\FigureOrPlaceholder{../outputs/figures/paper_gate1_sensitivity_rmt_controls.png}{Sensitivity-grid medians for finite GUE, GOE, and Poisson controls across $162$ matched RMT/Poisson comparisons.  GUE is the sine-kernel comparison ensemble, GOE is a contrast ensemble, and Poisson is the negative control.}
+
+\section{Limitations}
+
+The main limitation is sample size.  Each zeta block has 10,000 ordinates, far fewer than the larger samples used by Odlyzko.  The comparison is therefore a finite-block diagnostic rather than an asymptotic test.
+
+The estimator is also sensitive to choices of $\Delta$, $u_{\max}$, and $k_{\max}$.  The high-vs-low ordering is robust in the tested grid, but strict monotonic improvement from the $10^{12}$ block to the $10^{21}$ block is not universal.  This is why the result is stated as finite robustness rather than as a law.
+
+The data provenance is numerical rather than formal.  This note does not certify in a proof assistant that the listed ordinates are zeros of $\zeta(s)$, and it does not prove that the zeros lie on the critical line.  This is a different standard from rigorous computational verifications of the Riemann hypothesis, where interval arithmetic and zero-counting arguments are used to prove that all zeros in a height range have been accounted for \cite{plattTrudgian2020rh}.  Here, data preparation and histogram generation use floating-point arithmetic.
+
+Supplementary Lean 4 checks certify finite statements about an encoded version of the calculation: finite block sizes, adjacent-gap lengths, pair-sum index bounds, histogram/count facts, residual-summary comparisons, and the headline sensitivity counts.  In addition, for the default comparison, an Arb-backed interval calculation \cite{johanssonArb} exports rational enclosures for the sine-kernel bin values, and Lean checks that those enclosures imply the finite squared-residual ordering
+\[
+  D(\mathrm{initial})>D(10^{12}\text{ block})>D(10^{21}\text{ block}).
+\]
+These checks concern discrete statements about the exported finite calculation.  They do not certify the input zero ordinates, the data-acquisition scripts, raw floating-point arithmetic, Montgomery pair correlation, the Riemann hypothesis, GUE limits, or physics claims.
+
+\section{Reproducibility and supplementary material}
+
+The accompanying computational material contains the code used for the default comparison, the sensitivity study, the random-matrix and Poisson controls, the finite Lean checks, and the interval residual check.  It also includes data-source metadata and SHA-256 hashes for generated raw and normalized numerical files.  The \TeX{} source package for this note contains the manuscript source, bibliography, and the five figure files used in the compiled paper.
+
+\section{Code and data availability}
+
+The source code, report-generation scripts, Lean certificates, package-audit scripts, and provenance manifests are maintained in the accompanying repository.  The repository URL will be supplied in the public version.
+The paper-facing computations are tied to the commits and SHA-256 hashes reported in the repository manifests.  Generated raw and processed numerical files are not included in the \TeX{} source package; they can be regenerated from the scripts, or archived separately as ancillary material.
+
+\section{Conclusion}
+
+For this finite estimator and the tested grid, the two high Odlyzko blocks are consistently closer to the sine-kernel reference than the initial low-zero block.  The default residuals are monotone across the three blocks, and both high blocks improve on the initial block in all $27$ tested zeta configurations.  Strict monotonicity between the two high blocks is weaker, holding in $18$ of $27$ configurations.  The controls behave as expected at this scale: GUE usually has a smaller residual than Poisson, while GOE is best interpreted as a contrast ensemble.
+
+The evidence is consistent with the Montgomery--Odlyzko--GUE numerical picture, but it remains finite, floating-point, and estimator-dependent.  Natural extensions would include improved RMT unfolding, larger or more varied finite samples, and interval certificates for additional sensitivity configurations.
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

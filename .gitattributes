@@ -1,0 +1,2 @@
+*.csv -whitespace
+projects/montgomery-rmt/data/raw/odlyzko/zeros* -whitespace

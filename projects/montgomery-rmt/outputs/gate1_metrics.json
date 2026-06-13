@@ -1,0 +1,182 @@
+{
+  "command": [
+    "projects/montgomery-rmt/scripts/run_gate1_low_high.py",
+    "--blocks",
+    "gate0_default,block_1e12_10k,block_1e21_10k"
+  ],
+  "entries": [
+    {
+      "kind": "zeta",
+      "label": "gate0_default",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.047981501508480705,
+        "max_abs_residual": 0.14945903334380006,
+        "mean_residual": -0.0034823659156766828,
+        "path": "data/processed/gate1_gate0_default_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/gate1_gate0_default_paircorr.csv",
+      "raw_path": "data/raw/zeta_zeros.csv",
+      "spacing": {
+        "count": 9999,
+        "max": 2.4834692747154516,
+        "mean": 0.9998987588864433,
+        "min": 0.04209838383125463,
+        "path": "data/processed/gate1_gate0_default_spacings.csv",
+        "std": 0.3925711752473165
+      },
+      "spacing_path": "data/processed/gate1_gate0_default_spacings.csv"
+    },
+    {
+      "kind": "zeta",
+      "label": "block_1e12_10k",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.03994924228250327,
+        "max_abs_residual": 0.10654597479056593,
+        "mean_residual": -0.001282365915676686,
+        "path": "data/processed/gate1_block_1e12_10k_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/gate1_block_1e12_10k_paircorr.csv",
+      "raw_path": "data/raw/zeta_zeros_block_1e12_10k.csv",
+      "spacing": {
+        "count": 9999,
+        "max": 3.000747176985148,
+        "mean": 1.0001086977389704,
+        "min": 0.021646226566095834,
+        "path": "data/processed/gate1_block_1e12_10k_spacings.csv",
+        "std": 0.4203663208162945
+      },
+      "spacing_path": "data/processed/gate1_block_1e12_10k_spacings.csv"
+    },
+    {
+      "kind": "zeta",
+      "label": "block_1e21_10k",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.036965155167758244,
+        "max_abs_residual": 0.10612568606163197,
+        "mean_residual": -0.0005623659156766869,
+        "path": "data/processed/gate1_block_1e21_10k_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/gate1_block_1e21_10k_paircorr.csv",
+      "raw_path": "data/raw/zeta_zeros_block_1e21_10k.csv",
+      "spacing": {
+        "count": 9999,
+        "max": 2.866626154075035,
+        "mean": 0.9999699077458456,
+        "min": 0.03760462777092676,
+        "path": "data/processed/gate1_block_1e21_10k_spacings.csv",
+        "std": 0.4237322242479899
+      },
+      "spacing_path": "data/processed/gate1_block_1e21_10k_spacings.csv"
+    },
+    {
+      "kind": "control",
+      "label": "gue",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.12676527013460648,
+        "max_abs_residual": 0.3939897458754561,
+        "mean_residual": 0.002569470819017119,
+        "path": "data/processed/gue_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/gue_paircorr.csv",
+      "spacing": {
+        "count": 1175,
+        "max": 3.1353016504173317,
+        "mean": 1.0,
+        "min": 0.04900451838658138,
+        "path": "data/processed/gue_spacings.csv",
+        "std": 0.41777331908253074
+      },
+      "spacing_path": "data/processed/gue_spacings.csv"
+    },
+    {
+      "kind": "control",
+      "label": "goe",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.1414729597292631,
+        "max_abs_residual": 0.34363146642301756,
+        "mean_residual": 0.004780355172758626,
+        "path": "data/processed/goe_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/goe_paircorr.csv",
+      "spacing": {
+        "count": 1175,
+        "max": 3.3383524224213565,
+        "mean": 1.0,
+        "min": 0.043347042488536026,
+        "path": "data/processed/goe_spacings.csv",
+        "std": 0.5548882462604103
+      },
+      "spacing_path": "data/processed/goe_spacings.csv"
+    },
+    {
+      "kind": "control",
+      "label": "poisson",
+      "paircorr": {
+        "bin_count": 100,
+        "l2_distance_to_sine": 0.2617677165186597,
+        "max_abs_residual": 1.0678385335005025,
+        "mean_residual": 0.09789764208352338,
+        "path": "data/processed/poisson_paircorr.csv"
+      },
+      "paircorr_path": "data/processed/poisson_paircorr.csv",
+      "spacing": {
+        "count": 10000,
+        "max": 13.06547625323034,
+        "mean": 0.9967479970525616,
+        "min": 5.941382682305585e-05,
+        "path": "data/processed/poisson_spacings.csv",
+        "std": 1.010758664183988
+      },
+      "spacing_path": "data/processed/poisson_spacings.csv"
+    }
+  ],
+  "figures": [
+    "outputs/figures/gate1_paircorr_low_vs_high.png",
+    "outputs/figures/gate1_spacing_low_vs_high.png",
+    "outputs/figures/gate1_sine_kernel_residuals.png"
+  ],
+  "generated_at_utc": "2026-06-13T00:00:00+00:00",
+  "hashes": {
+    "data/processed/gate1_block_1e12_10k_paircorr.csv": "8e76cfe124e6bb749c9e8f2f04de0094fed789d6ce9442f425e5b104e3350316",
+    "data/processed/gate1_block_1e12_10k_spacings.csv": "9c111bcbf96b9711a0930992445c66ffc5cacccda1dfe4509cd6f9f0a8ebad62",
+    "data/processed/gate1_block_1e21_10k_paircorr.csv": "180f2e0129b514221f68fe80c13254bb7c1fce310c5c1fafb4cb0ab97b156649",
+    "data/processed/gate1_block_1e21_10k_spacings.csv": "09289a7bd3748a02c4be6280d330b5271fe69cf9ed9e12d5fa9fa7fd6c9dd2b5",
+    "data/processed/gate1_gate0_default_paircorr.csv": "f35510329101d06cd0894f1600be479f9ec1e627f372a9a6b479f5612e434ac8",
+    "data/processed/gate1_gate0_default_spacings.csv": "3100e3181b022cd24a3511fc836fed2f1b18c1a4b3615c0dc883ec56b642623e",
+    "outputs/figures/gate1_paircorr_low_vs_high.png": "81234e7e9c7a4fcdf1006ee8a3695cdb2ce6e2c11aec964cd5221fcec0533369",
+    "outputs/figures/gate1_sine_kernel_residuals.png": "455c8d65bf0e7600f547b9c5e253e257ea2e80654553c88be6c9b9ed3116bb5f",
+    "outputs/figures/gate1_spacing_low_vs_high.png": "c14bfcce594aeeac660a37fec3bd95dfed5bf0e928437f7811bb9fab91956a91"
+  },
+  "high_blocks_found": true,
+  "histogram_parameters": {
+    "bin_width": 0.05,
+    "max_k": 50,
+    "u_max": 5.0
+  },
+  "included_blocks": [
+    "gate0_default",
+    "block_1e12_10k",
+    "block_1e21_10k",
+    "gue",
+    "goe",
+    "poisson"
+  ],
+  "instructions": {
+    "fetch_high_block_example": ".venv/bin/python projects/montgomery-rmt/scripts/fetch_odlyzko_blocks.py --block block_1e12_10k --download --timeout 60"
+  },
+  "missing_blocks": [],
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "python_executable": "python",
+  "python_version": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "requested_blocks": [
+    "gate0_default",
+    "block_1e12_10k",
+    "block_1e21_10k"
+  ],
+  "require_high": false
+}

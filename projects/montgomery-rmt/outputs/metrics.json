@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-06-12T18:58:13+00:00",
+  "histogram_parameters": {
+    "bin_width": 0.05,
+    "max_k": 50,
+    "u_max": 5.0
+  },
+  "l2_distance_to_sine_kernel": {
+    "goe": 0.1414729597292631,
+    "gue": 0.12676527013460648,
+    "poisson": 0.2617677165186597,
+    "zeta": 0.047981501508480705
+  },
+  "mean_normalized_spacing": {
+    "goe": 1.0,
+    "gue": 1.0,
+    "poisson": 0.9967479970525616,
+    "zeta": 0.9998987588864433
+  },
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "poisson_sample_count": 10000,
+  "python_version": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "rmt_matrix_size": 80,
+  "rmt_sample_count": 25,
+  "seeds": {
+    "poisson": 314159,
+    "rmt": 1729
+  },
+  "spacing_count": 9999,
+  "spacing_counts": {
+    "goe": 1175,
+    "gue": 1175,
+    "poisson": 10000,
+    "zeta": 9999
+  },
+  "zeta_source": "sage_odlyzko_zeta",
+  "zeta_zero_count": 10000
+}

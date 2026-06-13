@@ -1,0 +1,433 @@
+config_id,source,bin_width,u_max,max_k,matrix_size,samples,seed,l2_to_sine_kernel,mean_normalized_spacing,notes
+h001,gate0_default,0.025,3,25,,,,0.0646963859899,0.999898758886,existing zeta block; no data fetched
+h001,block_1e12_10k,0.025,3,25,,,,0.0515006036014,1.00010869774,existing zeta block; no data fetched
+h001,block_1e21_10k,0.025,3,25,,,,0.046906198546,0.999969907746,existing zeta block; no data fetched
+h001,poisson,0.025,3,25,,,314159,0.339631063017,0.996747997053,Poisson negative control
+h002,gate0_default,0.025,3,50,,,,0.0646963859899,0.999898758886,existing zeta block; no data fetched
+h002,block_1e12_10k,0.025,3,50,,,,0.0515006036014,1.00010869774,existing zeta block; no data fetched
+h002,block_1e21_10k,0.025,3,50,,,,0.046906198546,0.999969907746,existing zeta block; no data fetched
+h002,poisson,0.025,3,50,,,314159,0.339631063017,0.996747997053,Poisson negative control
+h003,gate0_default,0.025,3,100,,,,0.0646963859899,0.999898758886,existing zeta block; no data fetched
+h003,block_1e12_10k,0.025,3,100,,,,0.0515006036014,1.00010869774,existing zeta block; no data fetched
+h003,block_1e21_10k,0.025,3,100,,,,0.046906198546,0.999969907746,existing zeta block; no data fetched
+h003,poisson,0.025,3,100,,,314159,0.339631063017,0.996747997053,Poisson negative control
+h004,gate0_default,0.025,5,25,,,,0.0639352604668,0.999898758886,existing zeta block; no data fetched
+h004,block_1e12_10k,0.025,5,25,,,,0.0566670183245,1.00010869774,existing zeta block; no data fetched
+h004,block_1e21_10k,0.025,5,25,,,,0.0543461450618,0.999969907746,existing zeta block; no data fetched
+h004,poisson,0.025,5,25,,,314159,0.265340703145,0.996747997053,Poisson negative control
+h005,gate0_default,0.025,5,50,,,,0.0639352604668,0.999898758886,existing zeta block; no data fetched
+h005,block_1e12_10k,0.025,5,50,,,,0.0566670183245,1.00010869774,existing zeta block; no data fetched
+h005,block_1e21_10k,0.025,5,50,,,,0.0543461450618,0.999969907746,existing zeta block; no data fetched
+h005,poisson,0.025,5,50,,,314159,0.265340703145,0.996747997053,Poisson negative control
+h006,gate0_default,0.025,5,100,,,,0.0639352604668,0.999898758886,existing zeta block; no data fetched
+h006,block_1e12_10k,0.025,5,100,,,,0.0566670183245,1.00010869774,existing zeta block; no data fetched
+h006,block_1e21_10k,0.025,5,100,,,,0.0543461450618,0.999969907746,existing zeta block; no data fetched
+h006,poisson,0.025,5,100,,,314159,0.265340703145,0.996747997053,Poisson negative control
+h007,gate0_default,0.025,8,25,,,,0.0714422640929,0.999898758886,existing zeta block; no data fetched
+h007,block_1e12_10k,0.025,8,25,,,,0.0619499185353,1.00010869774,existing zeta block; no data fetched
+h007,block_1e21_10k,0.025,8,25,,,,0.0577718518367,0.999969907746,existing zeta block; no data fetched
+h007,poisson,0.025,8,25,,,314159,0.213668611638,0.996747997053,Poisson negative control
+h008,gate0_default,0.025,8,50,,,,0.0714422640929,0.999898758886,existing zeta block; no data fetched
+h008,block_1e12_10k,0.025,8,50,,,,0.0619499185353,1.00010869774,existing zeta block; no data fetched
+h008,block_1e21_10k,0.025,8,50,,,,0.0577718518367,0.999969907746,existing zeta block; no data fetched
+h008,poisson,0.025,8,50,,,314159,0.213668611638,0.996747997053,Poisson negative control
+h009,gate0_default,0.025,8,100,,,,0.0714422640929,0.999898758886,existing zeta block; no data fetched
+h009,block_1e12_10k,0.025,8,100,,,,0.0619499185353,1.00010869774,existing zeta block; no data fetched
+h009,block_1e21_10k,0.025,8,100,,,,0.0577718518367,0.999969907746,existing zeta block; no data fetched
+h009,poisson,0.025,8,100,,,314159,0.213668611638,0.996747997053,Poisson negative control
+h010,gate0_default,0.05,3,25,,,,0.0513176388171,0.999898758886,existing zeta block; no data fetched
+h010,block_1e12_10k,0.05,3,25,,,,0.0359744162633,1.00010869774,existing zeta block; no data fetched
+h010,block_1e21_10k,0.05,3,25,,,,0.0318264917156,0.999969907746,existing zeta block; no data fetched
+h010,poisson,0.05,3,25,,,314159,0.336807381158,0.996747997053,Poisson negative control
+h011,gate0_default,0.05,3,50,,,,0.0513176388171,0.999898758886,existing zeta block; no data fetched
+h011,block_1e12_10k,0.05,3,50,,,,0.0359744162633,1.00010869774,existing zeta block; no data fetched
+h011,block_1e21_10k,0.05,3,50,,,,0.0318264917156,0.999969907746,existing zeta block; no data fetched
+h011,poisson,0.05,3,50,,,314159,0.336807381158,0.996747997053,Poisson negative control
+h012,gate0_default,0.05,3,100,,,,0.0513176388171,0.999898758886,existing zeta block; no data fetched
+h012,block_1e12_10k,0.05,3,100,,,,0.0359744162633,1.00010869774,existing zeta block; no data fetched
+h012,block_1e21_10k,0.05,3,100,,,,0.0318264917156,0.999969907746,existing zeta block; no data fetched
+h012,poisson,0.05,3,100,,,314159,0.336807381158,0.996747997053,Poisson negative control
+h013,gate0_default,0.05,5,25,,,,0.0479815015085,0.999898758886,existing zeta block; no data fetched
+h013,block_1e12_10k,0.05,5,25,,,,0.0399492422825,1.00010869774,existing zeta block; no data fetched
+h013,block_1e21_10k,0.05,5,25,,,,0.0369651551678,0.999969907746,existing zeta block; no data fetched
+h013,poisson,0.05,5,25,,,314159,0.261767716519,0.996747997053,Poisson negative control
+h014,gate0_default,0.05,5,50,,,,0.0479815015085,0.999898758886,existing zeta block; no data fetched
+h014,block_1e12_10k,0.05,5,50,,,,0.0399492422825,1.00010869774,existing zeta block; no data fetched
+h014,block_1e21_10k,0.05,5,50,,,,0.0369651551678,0.999969907746,existing zeta block; no data fetched
+h014,poisson,0.05,5,50,,,314159,0.261767716519,0.996747997053,Poisson negative control
+h015,gate0_default,0.05,5,100,,,,0.0479815015085,0.999898758886,existing zeta block; no data fetched
+h015,block_1e12_10k,0.05,5,100,,,,0.0399492422825,1.00010869774,existing zeta block; no data fetched
+h015,block_1e21_10k,0.05,5,100,,,,0.0369651551678,0.999969907746,existing zeta block; no data fetched
+h015,poisson,0.05,5,100,,,314159,0.261767716519,0.996747997053,Poisson negative control
+h016,gate0_default,0.05,8,25,,,,0.0558734289396,0.999898758886,existing zeta block; no data fetched
+h016,block_1e12_10k,0.05,8,25,,,,0.043405679032,1.00010869774,existing zeta block; no data fetched
+h016,block_1e21_10k,0.05,8,25,,,,0.039234784257,0.999969907746,existing zeta block; no data fetched
+h016,poisson,0.05,8,25,,,314159,0.209195454319,0.996747997053,Poisson negative control
+h017,gate0_default,0.05,8,50,,,,0.0558734289396,0.999898758886,existing zeta block; no data fetched
+h017,block_1e12_10k,0.05,8,50,,,,0.043405679032,1.00010869774,existing zeta block; no data fetched
+h017,block_1e21_10k,0.05,8,50,,,,0.039234784257,0.999969907746,existing zeta block; no data fetched
+h017,poisson,0.05,8,50,,,314159,0.209195454319,0.996747997053,Poisson negative control
+h018,gate0_default,0.05,8,100,,,,0.0558734289396,0.999898758886,existing zeta block; no data fetched
+h018,block_1e12_10k,0.05,8,100,,,,0.043405679032,1.00010869774,existing zeta block; no data fetched
+h018,block_1e21_10k,0.05,8,100,,,,0.039234784257,0.999969907746,existing zeta block; no data fetched
+h018,poisson,0.05,8,100,,,314159,0.209195454319,0.996747997053,Poisson negative control
+h019,gate0_default,0.1,3,25,,,,0.0415248183138,0.999898758886,existing zeta block; no data fetched
+h019,block_1e12_10k,0.1,3,25,,,,0.015727821002,1.00010869774,existing zeta block; no data fetched
+h019,block_1e21_10k,0.1,3,25,,,,0.0253587829703,0.999969907746,existing zeta block; no data fetched
+h019,poisson,0.1,3,25,,,314159,0.334981759443,0.996747997053,Poisson negative control
+h020,gate0_default,0.1,3,50,,,,0.0415248183138,0.999898758886,existing zeta block; no data fetched
+h020,block_1e12_10k,0.1,3,50,,,,0.015727821002,1.00010869774,existing zeta block; no data fetched
+h020,block_1e21_10k,0.1,3,50,,,,0.0253587829703,0.999969907746,existing zeta block; no data fetched
+h020,poisson,0.1,3,50,,,314159,0.334981759443,0.996747997053,Poisson negative control
+h021,gate0_default,0.1,3,100,,,,0.0415248183138,0.999898758886,existing zeta block; no data fetched
+h021,block_1e12_10k,0.1,3,100,,,,0.015727821002,1.00010869774,existing zeta block; no data fetched
+h021,block_1e21_10k,0.1,3,100,,,,0.0253587829703,0.999969907746,existing zeta block; no data fetched
+h021,poisson,0.1,3,100,,,314159,0.334981759443,0.996747997053,Poisson negative control
+h022,gate0_default,0.1,5,25,,,,0.0374148903714,0.999898758886,existing zeta block; no data fetched
+h022,block_1e12_10k,0.1,5,25,,,,0.0227422466485,1.00010869774,existing zeta block; no data fetched
+h022,block_1e21_10k,0.1,5,25,,,,0.0299883324021,0.999969907746,existing zeta block; no data fetched
+h022,poisson,0.1,5,25,,,314159,0.259927850511,0.996747997053,Poisson negative control
+h023,gate0_default,0.1,5,50,,,,0.0374148903714,0.999898758886,existing zeta block; no data fetched
+h023,block_1e12_10k,0.1,5,50,,,,0.0227422466485,1.00010869774,existing zeta block; no data fetched
+h023,block_1e21_10k,0.1,5,50,,,,0.0299883324021,0.999969907746,existing zeta block; no data fetched
+h023,poisson,0.1,5,50,,,314159,0.259927850511,0.996747997053,Poisson negative control
+h024,gate0_default,0.1,5,100,,,,0.0374148903714,0.999898758886,existing zeta block; no data fetched
+h024,block_1e12_10k,0.1,5,100,,,,0.0227422466485,1.00010869774,existing zeta block; no data fetched
+h024,block_1e21_10k,0.1,5,100,,,,0.0299883324021,0.999969907746,existing zeta block; no data fetched
+h024,poisson,0.1,5,100,,,314159,0.259927850511,0.996747997053,Poisson negative control
+h025,gate0_default,0.1,8,25,,,,0.0462161173363,0.999898758886,existing zeta block; no data fetched
+h025,block_1e12_10k,0.1,8,25,,,,0.0249569499732,1.00010869774,existing zeta block; no data fetched
+h025,block_1e21_10k,0.1,8,25,,,,0.0296163070835,0.999969907746,existing zeta block; no data fetched
+h025,poisson,0.1,8,25,,,314159,0.206467188453,0.996747997053,Poisson negative control
+h026,gate0_default,0.1,8,50,,,,0.0462161173363,0.999898758886,existing zeta block; no data fetched
+h026,block_1e12_10k,0.1,8,50,,,,0.0249569499732,1.00010869774,existing zeta block; no data fetched
+h026,block_1e21_10k,0.1,8,50,,,,0.0296163070835,0.999969907746,existing zeta block; no data fetched
+h026,poisson,0.1,8,50,,,314159,0.206467188453,0.996747997053,Poisson negative control
+h027,gate0_default,0.1,8,100,,,,0.0462161173363,0.999898758886,existing zeta block; no data fetched
+h027,block_1e12_10k,0.1,8,100,,,,0.0249569499732,1.00010869774,existing zeta block; no data fetched
+h027,block_1e21_10k,0.1,8,100,,,,0.0296163070835,0.999969907746,existing zeta block; no data fetched
+h027,poisson,0.1,8,100,,,314159,0.206467188453,0.996747997053,Poisson negative control
+h001_m60_s15,gue,0.025,3,25,60,15,1730,0.240519740117,1,GUE sine-kernel comparison
+h001_m60_s15,goe,0.025,3,25,60,15,1729,0.25237801148,1,GOE contrast ensemble
+h001_m60_s25,gue,0.025,3,25,60,25,1730,0.182117510654,1,GUE sine-kernel comparison
+h001_m60_s25,goe,0.025,3,25,60,25,1729,0.210932734224,1,GOE contrast ensemble
+h001_m80_s15,gue,0.025,3,25,80,15,1730,0.235490146852,1,GUE sine-kernel comparison
+h001_m80_s15,goe,0.025,3,25,80,15,1729,0.212894475188,1,GOE contrast ensemble
+h001_m80_s25,gue,0.025,3,25,80,25,1730,0.185037511873,1,GUE sine-kernel comparison
+h001_m80_s25,goe,0.025,3,25,80,25,1729,0.171624132554,1,GOE contrast ensemble
+h001_m120_s15,gue,0.025,3,25,120,15,1730,0.15457497169,1,GUE sine-kernel comparison
+h001_m120_s15,goe,0.025,3,25,120,15,1729,0.184073875343,1,GOE contrast ensemble
+h001_m120_s25,gue,0.025,3,25,120,25,1730,0.118083871407,1,GUE sine-kernel comparison
+h001_m120_s25,goe,0.025,3,25,120,25,1729,0.164694917242,1,GOE contrast ensemble
+h002_m60_s15,gue,0.025,3,50,60,15,1730,0.240519740117,1,GUE sine-kernel comparison
+h002_m60_s15,goe,0.025,3,50,60,15,1729,0.25237801148,1,GOE contrast ensemble
+h002_m60_s25,gue,0.025,3,50,60,25,1730,0.182117510654,1,GUE sine-kernel comparison
+h002_m60_s25,goe,0.025,3,50,60,25,1729,0.210932734224,1,GOE contrast ensemble
+h002_m80_s15,gue,0.025,3,50,80,15,1730,0.235490146852,1,GUE sine-kernel comparison
+h002_m80_s15,goe,0.025,3,50,80,15,1729,0.212894475188,1,GOE contrast ensemble
+h002_m80_s25,gue,0.025,3,50,80,25,1730,0.185037511873,1,GUE sine-kernel comparison
+h002_m80_s25,goe,0.025,3,50,80,25,1729,0.171624132554,1,GOE contrast ensemble
+h002_m120_s15,gue,0.025,3,50,120,15,1730,0.15457497169,1,GUE sine-kernel comparison
+h002_m120_s15,goe,0.025,3,50,120,15,1729,0.184073875343,1,GOE contrast ensemble
+h002_m120_s25,gue,0.025,3,50,120,25,1730,0.118083871407,1,GUE sine-kernel comparison
+h002_m120_s25,goe,0.025,3,50,120,25,1729,0.164694917242,1,GOE contrast ensemble
+h003_m60_s15,gue,0.025,3,100,60,15,1730,0.240519740117,1,GUE sine-kernel comparison
+h003_m60_s15,goe,0.025,3,100,60,15,1729,0.25237801148,1,GOE contrast ensemble
+h003_m60_s25,gue,0.025,3,100,60,25,1730,0.182117510654,1,GUE sine-kernel comparison
+h003_m60_s25,goe,0.025,3,100,60,25,1729,0.210932734224,1,GOE contrast ensemble
+h003_m80_s15,gue,0.025,3,100,80,15,1730,0.235490146852,1,GUE sine-kernel comparison
+h003_m80_s15,goe,0.025,3,100,80,15,1729,0.212894475188,1,GOE contrast ensemble
+h003_m80_s25,gue,0.025,3,100,80,25,1730,0.185037511873,1,GUE sine-kernel comparison
+h003_m80_s25,goe,0.025,3,100,80,25,1729,0.171624132554,1,GOE contrast ensemble
+h003_m120_s15,gue,0.025,3,100,120,15,1730,0.15457497169,1,GUE sine-kernel comparison
+h003_m120_s15,goe,0.025,3,100,120,15,1729,0.184073875343,1,GOE contrast ensemble
+h003_m120_s25,gue,0.025,3,100,120,25,1730,0.118083871407,1,GUE sine-kernel comparison
+h003_m120_s25,goe,0.025,3,100,120,25,1729,0.164694917242,1,GOE contrast ensemble
+h004_m60_s15,gue,0.025,5,25,60,15,1730,0.255685029649,1,GUE sine-kernel comparison
+h004_m60_s15,goe,0.025,5,25,60,15,1729,0.257345885084,1,GOE contrast ensemble
+h004_m60_s25,gue,0.025,5,25,60,25,1730,0.19525174832,1,GUE sine-kernel comparison
+h004_m60_s25,goe,0.025,5,25,60,25,1729,0.208900010164,1,GOE contrast ensemble
+h004_m80_s15,gue,0.025,5,25,80,15,1730,0.224589640102,1,GUE sine-kernel comparison
+h004_m80_s15,goe,0.025,5,25,80,15,1729,0.213104438584,1,GOE contrast ensemble
+h004_m80_s25,gue,0.025,5,25,80,25,1730,0.178354950012,1,GUE sine-kernel comparison
+h004_m80_s25,goe,0.025,5,25,80,25,1729,0.184576243072,1,GOE contrast ensemble
+h004_m120_s15,gue,0.025,5,25,120,15,1730,0.168616198432,1,GUE sine-kernel comparison
+h004_m120_s15,goe,0.025,5,25,120,15,1729,0.180294678125,1,GOE contrast ensemble
+h004_m120_s25,gue,0.025,5,25,120,25,1730,0.131651910103,1,GUE sine-kernel comparison
+h004_m120_s25,goe,0.025,5,25,120,25,1729,0.152848344519,1,GOE contrast ensemble
+h005_m60_s15,gue,0.025,5,50,60,15,1730,0.255685029649,1,GUE sine-kernel comparison
+h005_m60_s15,goe,0.025,5,50,60,15,1729,0.257345885084,1,GOE contrast ensemble
+h005_m60_s25,gue,0.025,5,50,60,25,1730,0.19525174832,1,GUE sine-kernel comparison
+h005_m60_s25,goe,0.025,5,50,60,25,1729,0.208900010164,1,GOE contrast ensemble
+h005_m80_s15,gue,0.025,5,50,80,15,1730,0.224589640102,1,GUE sine-kernel comparison
+h005_m80_s15,goe,0.025,5,50,80,15,1729,0.213104438584,1,GOE contrast ensemble
+h005_m80_s25,gue,0.025,5,50,80,25,1730,0.178354950012,1,GUE sine-kernel comparison
+h005_m80_s25,goe,0.025,5,50,80,25,1729,0.184576243072,1,GOE contrast ensemble
+h005_m120_s15,gue,0.025,5,50,120,15,1730,0.168616198432,1,GUE sine-kernel comparison
+h005_m120_s15,goe,0.025,5,50,120,15,1729,0.180294678125,1,GOE contrast ensemble
+h005_m120_s25,gue,0.025,5,50,120,25,1730,0.131651910103,1,GUE sine-kernel comparison
+h005_m120_s25,goe,0.025,5,50,120,25,1729,0.152848344519,1,GOE contrast ensemble
+h006_m60_s15,gue,0.025,5,100,60,15,1730,0.255685029649,1,GUE sine-kernel comparison
+h006_m60_s15,goe,0.025,5,100,60,15,1729,0.257345885084,1,GOE contrast ensemble
+h006_m60_s25,gue,0.025,5,100,60,25,1730,0.19525174832,1,GUE sine-kernel comparison
+h006_m60_s25,goe,0.025,5,100,60,25,1729,0.208900010164,1,GOE contrast ensemble
+h006_m80_s15,gue,0.025,5,100,80,15,1730,0.224589640102,1,GUE sine-kernel comparison
+h006_m80_s15,goe,0.025,5,100,80,15,1729,0.213104438584,1,GOE contrast ensemble
+h006_m80_s25,gue,0.025,5,100,80,25,1730,0.178354950012,1,GUE sine-kernel comparison
+h006_m80_s25,goe,0.025,5,100,80,25,1729,0.184576243072,1,GOE contrast ensemble
+h006_m120_s15,gue,0.025,5,100,120,15,1730,0.168616198432,1,GUE sine-kernel comparison
+h006_m120_s15,goe,0.025,5,100,120,15,1729,0.180294678125,1,GOE contrast ensemble
+h006_m120_s25,gue,0.025,5,100,120,25,1730,0.131651910103,1,GUE sine-kernel comparison
+h006_m120_s25,goe,0.025,5,100,120,25,1729,0.152848344519,1,GOE contrast ensemble
+h007_m60_s15,gue,0.025,8,25,60,15,1730,0.250411956896,1,GUE sine-kernel comparison
+h007_m60_s15,goe,0.025,8,25,60,15,1729,0.26619783151,1,GOE contrast ensemble
+h007_m60_s25,gue,0.025,8,25,60,25,1730,0.186137468376,1,GUE sine-kernel comparison
+h007_m60_s25,goe,0.025,8,25,60,25,1729,0.210785911251,1,GOE contrast ensemble
+h007_m80_s15,gue,0.025,8,25,80,15,1730,0.224138702661,1,GUE sine-kernel comparison
+h007_m80_s15,goe,0.025,8,25,80,15,1729,0.229135460452,1,GOE contrast ensemble
+h007_m80_s25,gue,0.025,8,25,80,25,1730,0.176834859112,1,GUE sine-kernel comparison
+h007_m80_s25,goe,0.025,8,25,80,25,1729,0.185091095312,1,GOE contrast ensemble
+h007_m120_s15,gue,0.025,8,25,120,15,1730,0.171004105048,1,GUE sine-kernel comparison
+h007_m120_s15,goe,0.025,8,25,120,15,1729,0.179224610877,1,GOE contrast ensemble
+h007_m120_s25,gue,0.025,8,25,120,25,1730,0.134766586338,1,GUE sine-kernel comparison
+h007_m120_s25,goe,0.025,8,25,120,25,1729,0.152724004794,1,GOE contrast ensemble
+h008_m60_s15,gue,0.025,8,50,60,15,1730,0.250411956896,1,GUE sine-kernel comparison
+h008_m60_s15,goe,0.025,8,50,60,15,1729,0.26619783151,1,GOE contrast ensemble
+h008_m60_s25,gue,0.025,8,50,60,25,1730,0.186137468376,1,GUE sine-kernel comparison
+h008_m60_s25,goe,0.025,8,50,60,25,1729,0.210785911251,1,GOE contrast ensemble
+h008_m80_s15,gue,0.025,8,50,80,15,1730,0.224138702661,1,GUE sine-kernel comparison
+h008_m80_s15,goe,0.025,8,50,80,15,1729,0.229135460452,1,GOE contrast ensemble
+h008_m80_s25,gue,0.025,8,50,80,25,1730,0.176834859112,1,GUE sine-kernel comparison
+h008_m80_s25,goe,0.025,8,50,80,25,1729,0.185091095312,1,GOE contrast ensemble
+h008_m120_s15,gue,0.025,8,50,120,15,1730,0.171004105048,1,GUE sine-kernel comparison
+h008_m120_s15,goe,0.025,8,50,120,15,1729,0.179224610877,1,GOE contrast ensemble
+h008_m120_s25,gue,0.025,8,50,120,25,1730,0.134766586338,1,GUE sine-kernel comparison
+h008_m120_s25,goe,0.025,8,50,120,25,1729,0.152724004794,1,GOE contrast ensemble
+h009_m60_s15,gue,0.025,8,100,60,15,1730,0.250411956896,1,GUE sine-kernel comparison
+h009_m60_s15,goe,0.025,8,100,60,15,1729,0.26619783151,1,GOE contrast ensemble
+h009_m60_s25,gue,0.025,8,100,60,25,1730,0.186137468376,1,GUE sine-kernel comparison
+h009_m60_s25,goe,0.025,8,100,60,25,1729,0.210785911251,1,GOE contrast ensemble
+h009_m80_s15,gue,0.025,8,100,80,15,1730,0.224138702661,1,GUE sine-kernel comparison
+h009_m80_s15,goe,0.025,8,100,80,15,1729,0.229135460452,1,GOE contrast ensemble
+h009_m80_s25,gue,0.025,8,100,80,25,1730,0.176834859112,1,GUE sine-kernel comparison
+h009_m80_s25,goe,0.025,8,100,80,25,1729,0.185091095312,1,GOE contrast ensemble
+h009_m120_s15,gue,0.025,8,100,120,15,1730,0.171004105048,1,GUE sine-kernel comparison
+h009_m120_s15,goe,0.025,8,100,120,15,1729,0.179224610877,1,GOE contrast ensemble
+h009_m120_s25,gue,0.025,8,100,120,25,1730,0.134766586338,1,GUE sine-kernel comparison
+h009_m120_s25,goe,0.025,8,100,120,25,1729,0.152724004794,1,GOE contrast ensemble
+h010_m60_s15,gue,0.05,3,25,60,15,1730,0.156271131419,1,GUE sine-kernel comparison
+h010_m60_s15,goe,0.05,3,25,60,15,1729,0.181304885235,1,GOE contrast ensemble
+h010_m60_s25,gue,0.05,3,25,60,25,1730,0.117494815733,1,GUE sine-kernel comparison
+h010_m60_s25,goe,0.05,3,25,60,25,1729,0.147805465513,1,GOE contrast ensemble
+h010_m80_s15,gue,0.05,3,25,80,15,1730,0.161800937202,1,GUE sine-kernel comparison
+h010_m80_s15,goe,0.05,3,25,80,15,1729,0.159725447994,1,GOE contrast ensemble
+h010_m80_s25,gue,0.05,3,25,80,25,1730,0.129718432149,1,GUE sine-kernel comparison
+h010_m80_s25,goe,0.05,3,25,80,25,1729,0.138567291483,1,GOE contrast ensemble
+h010_m120_s15,gue,0.05,3,25,120,15,1730,0.117145272454,1,GUE sine-kernel comparison
+h010_m120_s15,goe,0.05,3,25,120,15,1729,0.138154030342,1,GOE contrast ensemble
+h010_m120_s25,gue,0.05,3,25,120,25,1730,0.0861556252779,1,GUE sine-kernel comparison
+h010_m120_s25,goe,0.05,3,25,120,25,1729,0.134413658862,1,GOE contrast ensemble
+h011_m60_s15,gue,0.05,3,50,60,15,1730,0.156271131419,1,GUE sine-kernel comparison
+h011_m60_s15,goe,0.05,3,50,60,15,1729,0.181304885235,1,GOE contrast ensemble
+h011_m60_s25,gue,0.05,3,50,60,25,1730,0.117494815733,1,GUE sine-kernel comparison
+h011_m60_s25,goe,0.05,3,50,60,25,1729,0.147805465513,1,GOE contrast ensemble
+h011_m80_s15,gue,0.05,3,50,80,15,1730,0.161800937202,1,GUE sine-kernel comparison
+h011_m80_s15,goe,0.05,3,50,80,15,1729,0.159725447994,1,GOE contrast ensemble
+h011_m80_s25,gue,0.05,3,50,80,25,1730,0.129718432149,1,GUE sine-kernel comparison
+h011_m80_s25,goe,0.05,3,50,80,25,1729,0.138567291483,1,GOE contrast ensemble
+h011_m120_s15,gue,0.05,3,50,120,15,1730,0.117145272454,1,GUE sine-kernel comparison
+h011_m120_s15,goe,0.05,3,50,120,15,1729,0.138154030342,1,GOE contrast ensemble
+h011_m120_s25,gue,0.05,3,50,120,25,1730,0.0861556252779,1,GUE sine-kernel comparison
+h011_m120_s25,goe,0.05,3,50,120,25,1729,0.134413658862,1,GOE contrast ensemble
+h012_m60_s15,gue,0.05,3,100,60,15,1730,0.156271131419,1,GUE sine-kernel comparison
+h012_m60_s15,goe,0.05,3,100,60,15,1729,0.181304885235,1,GOE contrast ensemble
+h012_m60_s25,gue,0.05,3,100,60,25,1730,0.117494815733,1,GUE sine-kernel comparison
+h012_m60_s25,goe,0.05,3,100,60,25,1729,0.147805465513,1,GOE contrast ensemble
+h012_m80_s15,gue,0.05,3,100,80,15,1730,0.161800937202,1,GUE sine-kernel comparison
+h012_m80_s15,goe,0.05,3,100,80,15,1729,0.159725447994,1,GOE contrast ensemble
+h012_m80_s25,gue,0.05,3,100,80,25,1730,0.129718432149,1,GUE sine-kernel comparison
+h012_m80_s25,goe,0.05,3,100,80,25,1729,0.138567291483,1,GOE contrast ensemble
+h012_m120_s15,gue,0.05,3,100,120,15,1730,0.117145272454,1,GUE sine-kernel comparison
+h012_m120_s15,goe,0.05,3,100,120,15,1729,0.138154030342,1,GOE contrast ensemble
+h012_m120_s25,gue,0.05,3,100,120,25,1730,0.0861556252779,1,GUE sine-kernel comparison
+h012_m120_s25,goe,0.05,3,100,120,25,1729,0.134413658862,1,GOE contrast ensemble
+h013_m60_s15,gue,0.05,5,25,60,15,1730,0.169588083767,1,GUE sine-kernel comparison
+h013_m60_s15,goe,0.05,5,25,60,15,1729,0.166626199119,1,GOE contrast ensemble
+h013_m60_s25,gue,0.05,5,25,60,25,1730,0.12459013138,1,GUE sine-kernel comparison
+h013_m60_s25,goe,0.05,5,25,60,25,1729,0.139548189167,1,GOE contrast ensemble
+h013_m80_s15,gue,0.05,5,25,80,15,1730,0.15812585888,1,GUE sine-kernel comparison
+h013_m80_s15,goe,0.05,5,25,80,15,1729,0.153113085132,1,GOE contrast ensemble
+h013_m80_s25,gue,0.05,5,25,80,25,1730,0.126765270135,1,GUE sine-kernel comparison
+h013_m80_s25,goe,0.05,5,25,80,25,1729,0.141472959729,1,GOE contrast ensemble
+h013_m120_s15,gue,0.05,5,25,120,15,1730,0.12201960725,1,GUE sine-kernel comparison
+h013_m120_s15,goe,0.05,5,25,120,15,1729,0.131501932017,1,GOE contrast ensemble
+h013_m120_s25,gue,0.05,5,25,120,25,1730,0.0901981055699,1,GUE sine-kernel comparison
+h013_m120_s25,goe,0.05,5,25,120,25,1729,0.11844337473,1,GOE contrast ensemble
+h014_m60_s15,gue,0.05,5,50,60,15,1730,0.169588083767,1,GUE sine-kernel comparison
+h014_m60_s15,goe,0.05,5,50,60,15,1729,0.166626199119,1,GOE contrast ensemble
+h014_m60_s25,gue,0.05,5,50,60,25,1730,0.12459013138,1,GUE sine-kernel comparison
+h014_m60_s25,goe,0.05,5,50,60,25,1729,0.139548189167,1,GOE contrast ensemble
+h014_m80_s15,gue,0.05,5,50,80,15,1730,0.15812585888,1,GUE sine-kernel comparison
+h014_m80_s15,goe,0.05,5,50,80,15,1729,0.153113085132,1,GOE contrast ensemble
+h014_m80_s25,gue,0.05,5,50,80,25,1730,0.126765270135,1,GUE sine-kernel comparison
+h014_m80_s25,goe,0.05,5,50,80,25,1729,0.141472959729,1,GOE contrast ensemble
+h014_m120_s15,gue,0.05,5,50,120,15,1730,0.12201960725,1,GUE sine-kernel comparison
+h014_m120_s15,goe,0.05,5,50,120,15,1729,0.131501932017,1,GOE contrast ensemble
+h014_m120_s25,gue,0.05,5,50,120,25,1730,0.0901981055699,1,GUE sine-kernel comparison
+h014_m120_s25,goe,0.05,5,50,120,25,1729,0.11844337473,1,GOE contrast ensemble
+h015_m60_s15,gue,0.05,5,100,60,15,1730,0.169588083767,1,GUE sine-kernel comparison
+h015_m60_s15,goe,0.05,5,100,60,15,1729,0.166626199119,1,GOE contrast ensemble
+h015_m60_s25,gue,0.05,5,100,60,25,1730,0.12459013138,1,GUE sine-kernel comparison
+h015_m60_s25,goe,0.05,5,100,60,25,1729,0.139548189167,1,GOE contrast ensemble
+h015_m80_s15,gue,0.05,5,100,80,15,1730,0.15812585888,1,GUE sine-kernel comparison
+h015_m80_s15,goe,0.05,5,100,80,15,1729,0.153113085132,1,GOE contrast ensemble
+h015_m80_s25,gue,0.05,5,100,80,25,1730,0.126765270135,1,GUE sine-kernel comparison
+h015_m80_s25,goe,0.05,5,100,80,25,1729,0.141472959729,1,GOE contrast ensemble
+h015_m120_s15,gue,0.05,5,100,120,15,1730,0.12201960725,1,GUE sine-kernel comparison
+h015_m120_s15,goe,0.05,5,100,120,15,1729,0.131501932017,1,GOE contrast ensemble
+h015_m120_s25,gue,0.05,5,100,120,25,1730,0.0901981055699,1,GUE sine-kernel comparison
+h015_m120_s25,goe,0.05,5,100,120,25,1729,0.11844337473,1,GOE contrast ensemble
+h016_m60_s15,gue,0.05,8,25,60,15,1730,0.16970065448,1,GUE sine-kernel comparison
+h016_m60_s15,goe,0.05,8,25,60,15,1729,0.17752579585,1,GOE contrast ensemble
+h016_m60_s25,gue,0.05,8,25,60,25,1730,0.117821683168,1,GUE sine-kernel comparison
+h016_m60_s25,goe,0.05,8,25,60,25,1729,0.14549408304,1,GOE contrast ensemble
+h016_m80_s15,gue,0.05,8,25,80,15,1730,0.154847408662,1,GUE sine-kernel comparison
+h016_m80_s15,goe,0.05,8,25,80,15,1729,0.166942361268,1,GOE contrast ensemble
+h016_m80_s25,gue,0.05,8,25,80,25,1730,0.127871419074,1,GUE sine-kernel comparison
+h016_m80_s25,goe,0.05,8,25,80,25,1729,0.13891339958,1,GOE contrast ensemble
+h016_m120_s15,gue,0.05,8,25,120,15,1730,0.117139272988,1,GUE sine-kernel comparison
+h016_m120_s15,goe,0.05,8,25,120,15,1729,0.123798593836,1,GOE contrast ensemble
+h016_m120_s25,gue,0.05,8,25,120,25,1730,0.092553613779,1,GUE sine-kernel comparison
+h016_m120_s25,goe,0.05,8,25,120,25,1729,0.109572556681,1,GOE contrast ensemble
+h017_m60_s15,gue,0.05,8,50,60,15,1730,0.16970065448,1,GUE sine-kernel comparison
+h017_m60_s15,goe,0.05,8,50,60,15,1729,0.17752579585,1,GOE contrast ensemble
+h017_m60_s25,gue,0.05,8,50,60,25,1730,0.117821683168,1,GUE sine-kernel comparison
+h017_m60_s25,goe,0.05,8,50,60,25,1729,0.14549408304,1,GOE contrast ensemble
+h017_m80_s15,gue,0.05,8,50,80,15,1730,0.154847408662,1,GUE sine-kernel comparison
+h017_m80_s15,goe,0.05,8,50,80,15,1729,0.166942361268,1,GOE contrast ensemble
+h017_m80_s25,gue,0.05,8,50,80,25,1730,0.127871419074,1,GUE sine-kernel comparison
+h017_m80_s25,goe,0.05,8,50,80,25,1729,0.13891339958,1,GOE contrast ensemble
+h017_m120_s15,gue,0.05,8,50,120,15,1730,0.117139272988,1,GUE sine-kernel comparison
+h017_m120_s15,goe,0.05,8,50,120,15,1729,0.123798593836,1,GOE contrast ensemble
+h017_m120_s25,gue,0.05,8,50,120,25,1730,0.092553613779,1,GUE sine-kernel comparison
+h017_m120_s25,goe,0.05,8,50,120,25,1729,0.109572556681,1,GOE contrast ensemble
+h018_m60_s15,gue,0.05,8,100,60,15,1730,0.16970065448,1,GUE sine-kernel comparison
+h018_m60_s15,goe,0.05,8,100,60,15,1729,0.17752579585,1,GOE contrast ensemble
+h018_m60_s25,gue,0.05,8,100,60,25,1730,0.117821683168,1,GUE sine-kernel comparison
+h018_m60_s25,goe,0.05,8,100,60,25,1729,0.14549408304,1,GOE contrast ensemble
+h018_m80_s15,gue,0.05,8,100,80,15,1730,0.154847408662,1,GUE sine-kernel comparison
+h018_m80_s15,goe,0.05,8,100,80,15,1729,0.166942361268,1,GOE contrast ensemble
+h018_m80_s25,gue,0.05,8,100,80,25,1730,0.127871419074,1,GUE sine-kernel comparison
+h018_m80_s25,goe,0.05,8,100,80,25,1729,0.13891339958,1,GOE contrast ensemble
+h018_m120_s15,gue,0.05,8,100,120,15,1730,0.117139272988,1,GUE sine-kernel comparison
+h018_m120_s15,goe,0.05,8,100,120,15,1729,0.123798593836,1,GOE contrast ensemble
+h018_m120_s25,gue,0.05,8,100,120,25,1730,0.092553613779,1,GUE sine-kernel comparison
+h018_m120_s25,goe,0.05,8,100,120,25,1729,0.109572556681,1,GOE contrast ensemble
+h019_m60_s15,gue,0.1,3,25,60,15,1730,0.105303555071,1,GUE sine-kernel comparison
+h019_m60_s15,goe,0.1,3,25,60,15,1729,0.132358021979,1,GOE contrast ensemble
+h019_m60_s25,gue,0.1,3,25,60,25,1730,0.0768675583792,1,GUE sine-kernel comparison
+h019_m60_s25,goe,0.1,3,25,60,25,1729,0.110184591185,1,GOE contrast ensemble
+h019_m80_s15,gue,0.1,3,25,80,15,1730,0.110358237302,1,GUE sine-kernel comparison
+h019_m80_s15,goe,0.1,3,25,80,15,1729,0.137614549884,1,GOE contrast ensemble
+h019_m80_s25,gue,0.1,3,25,80,25,1730,0.0966029332558,1,GUE sine-kernel comparison
+h019_m80_s25,goe,0.1,3,25,80,25,1729,0.121715591921,1,GOE contrast ensemble
+h019_m120_s15,gue,0.1,3,25,120,15,1730,0.0833642815951,1,GUE sine-kernel comparison
+h019_m120_s15,goe,0.1,3,25,120,15,1729,0.101725063739,1,GOE contrast ensemble
+h019_m120_s25,gue,0.1,3,25,120,25,1730,0.0662779357619,1,GUE sine-kernel comparison
+h019_m120_s25,goe,0.1,3,25,120,25,1729,0.107231271872,1,GOE contrast ensemble
+h020_m60_s15,gue,0.1,3,50,60,15,1730,0.105303555071,1,GUE sine-kernel comparison
+h020_m60_s15,goe,0.1,3,50,60,15,1729,0.132358021979,1,GOE contrast ensemble
+h020_m60_s25,gue,0.1,3,50,60,25,1730,0.0768675583792,1,GUE sine-kernel comparison
+h020_m60_s25,goe,0.1,3,50,60,25,1729,0.110184591185,1,GOE contrast ensemble
+h020_m80_s15,gue,0.1,3,50,80,15,1730,0.110358237302,1,GUE sine-kernel comparison
+h020_m80_s15,goe,0.1,3,50,80,15,1729,0.137614549884,1,GOE contrast ensemble
+h020_m80_s25,gue,0.1,3,50,80,25,1730,0.0966029332558,1,GUE sine-kernel comparison
+h020_m80_s25,goe,0.1,3,50,80,25,1729,0.121715591921,1,GOE contrast ensemble
+h020_m120_s15,gue,0.1,3,50,120,15,1730,0.0833642815951,1,GUE sine-kernel comparison
+h020_m120_s15,goe,0.1,3,50,120,15,1729,0.101725063739,1,GOE contrast ensemble
+h020_m120_s25,gue,0.1,3,50,120,25,1730,0.0662779357619,1,GUE sine-kernel comparison
+h020_m120_s25,goe,0.1,3,50,120,25,1729,0.107231271872,1,GOE contrast ensemble
+h021_m60_s15,gue,0.1,3,100,60,15,1730,0.105303555071,1,GUE sine-kernel comparison
+h021_m60_s15,goe,0.1,3,100,60,15,1729,0.132358021979,1,GOE contrast ensemble
+h021_m60_s25,gue,0.1,3,100,60,25,1730,0.0768675583792,1,GUE sine-kernel comparison
+h021_m60_s25,goe,0.1,3,100,60,25,1729,0.110184591185,1,GOE contrast ensemble
+h021_m80_s15,gue,0.1,3,100,80,15,1730,0.110358237302,1,GUE sine-kernel comparison
+h021_m80_s15,goe,0.1,3,100,80,15,1729,0.137614549884,1,GOE contrast ensemble
+h021_m80_s25,gue,0.1,3,100,80,25,1730,0.0966029332558,1,GUE sine-kernel comparison
+h021_m80_s25,goe,0.1,3,100,80,25,1729,0.121715591921,1,GOE contrast ensemble
+h021_m120_s15,gue,0.1,3,100,120,15,1730,0.0833642815951,1,GUE sine-kernel comparison
+h021_m120_s15,goe,0.1,3,100,120,15,1729,0.101725063739,1,GOE contrast ensemble
+h021_m120_s25,gue,0.1,3,100,120,25,1730,0.0662779357619,1,GUE sine-kernel comparison
+h021_m120_s25,goe,0.1,3,100,120,25,1729,0.107231271872,1,GOE contrast ensemble
+h022_m60_s15,gue,0.1,5,25,60,15,1730,0.117156594665,1,GUE sine-kernel comparison
+h022_m60_s15,goe,0.1,5,25,60,15,1729,0.120524889609,1,GOE contrast ensemble
+h022_m60_s25,gue,0.1,5,25,60,25,1730,0.0831242216035,1,GUE sine-kernel comparison
+h022_m60_s25,goe,0.1,5,25,60,25,1729,0.102037485945,1,GOE contrast ensemble
+h022_m80_s15,gue,0.1,5,25,80,15,1730,0.108763070087,1,GUE sine-kernel comparison
+h022_m80_s15,goe,0.1,5,25,80,15,1729,0.121113014645,1,GOE contrast ensemble
+h022_m80_s25,gue,0.1,5,25,80,25,1730,0.0931703274665,1,GUE sine-kernel comparison
+h022_m80_s25,goe,0.1,5,25,80,25,1729,0.106457519308,1,GOE contrast ensemble
+h022_m120_s15,gue,0.1,5,25,120,15,1730,0.0838124247733,1,GUE sine-kernel comparison
+h022_m120_s15,goe,0.1,5,25,120,15,1729,0.0973797078779,1,GOE contrast ensemble
+h022_m120_s25,gue,0.1,5,25,120,25,1730,0.0650033273118,1,GUE sine-kernel comparison
+h022_m120_s25,goe,0.1,5,25,120,25,1729,0.0934993731539,1,GOE contrast ensemble
+h023_m60_s15,gue,0.1,5,50,60,15,1730,0.117156594665,1,GUE sine-kernel comparison
+h023_m60_s15,goe,0.1,5,50,60,15,1729,0.120524889609,1,GOE contrast ensemble
+h023_m60_s25,gue,0.1,5,50,60,25,1730,0.0831242216035,1,GUE sine-kernel comparison
+h023_m60_s25,goe,0.1,5,50,60,25,1729,0.102037485945,1,GOE contrast ensemble
+h023_m80_s15,gue,0.1,5,50,80,15,1730,0.108763070087,1,GUE sine-kernel comparison
+h023_m80_s15,goe,0.1,5,50,80,15,1729,0.121113014645,1,GOE contrast ensemble
+h023_m80_s25,gue,0.1,5,50,80,25,1730,0.0931703274665,1,GUE sine-kernel comparison
+h023_m80_s25,goe,0.1,5,50,80,25,1729,0.106457519308,1,GOE contrast ensemble
+h023_m120_s15,gue,0.1,5,50,120,15,1730,0.0838124247733,1,GUE sine-kernel comparison
+h023_m120_s15,goe,0.1,5,50,120,15,1729,0.0973797078779,1,GOE contrast ensemble
+h023_m120_s25,gue,0.1,5,50,120,25,1730,0.0650033273118,1,GUE sine-kernel comparison
+h023_m120_s25,goe,0.1,5,50,120,25,1729,0.0934993731539,1,GOE contrast ensemble
+h024_m60_s15,gue,0.1,5,100,60,15,1730,0.117156594665,1,GUE sine-kernel comparison
+h024_m60_s15,goe,0.1,5,100,60,15,1729,0.120524889609,1,GOE contrast ensemble
+h024_m60_s25,gue,0.1,5,100,60,25,1730,0.0831242216035,1,GUE sine-kernel comparison
+h024_m60_s25,goe,0.1,5,100,60,25,1729,0.102037485945,1,GOE contrast ensemble
+h024_m80_s15,gue,0.1,5,100,80,15,1730,0.108763070087,1,GUE sine-kernel comparison
+h024_m80_s15,goe,0.1,5,100,80,15,1729,0.121113014645,1,GOE contrast ensemble
+h024_m80_s25,gue,0.1,5,100,80,25,1730,0.0931703274665,1,GUE sine-kernel comparison
+h024_m80_s25,goe,0.1,5,100,80,25,1729,0.106457519308,1,GOE contrast ensemble
+h024_m120_s15,gue,0.1,5,100,120,15,1730,0.0838124247733,1,GUE sine-kernel comparison
+h024_m120_s15,goe,0.1,5,100,120,15,1729,0.0973797078779,1,GOE contrast ensemble
+h024_m120_s25,gue,0.1,5,100,120,25,1730,0.0650033273118,1,GUE sine-kernel comparison
+h024_m120_s25,goe,0.1,5,100,120,25,1729,0.0934993731539,1,GOE contrast ensemble
+h025_m60_s15,gue,0.1,8,25,60,15,1730,0.120581136461,1,GUE sine-kernel comparison
+h025_m60_s15,goe,0.1,8,25,60,15,1729,0.11043106431,1,GOE contrast ensemble
+h025_m60_s25,gue,0.1,8,25,60,25,1730,0.0775346179758,1,GUE sine-kernel comparison
+h025_m60_s25,goe,0.1,8,25,60,25,1729,0.0960440650009,1,GOE contrast ensemble
+h025_m80_s15,gue,0.1,8,25,80,15,1730,0.109533542541,1,GUE sine-kernel comparison
+h025_m80_s15,goe,0.1,8,25,80,15,1729,0.128722423141,1,GOE contrast ensemble
+h025_m80_s25,gue,0.1,8,25,80,25,1730,0.0885798020952,1,GUE sine-kernel comparison
+h025_m80_s25,goe,0.1,8,25,80,25,1729,0.0998019166514,1,GOE contrast ensemble
+h025_m120_s15,gue,0.1,8,25,120,15,1730,0.0848129603073,1,GUE sine-kernel comparison
+h025_m120_s15,goe,0.1,8,25,120,15,1729,0.0904100475799,1,GOE contrast ensemble
+h025_m120_s25,gue,0.1,8,25,120,25,1730,0.0692508378969,1,GUE sine-kernel comparison
+h025_m120_s25,goe,0.1,8,25,120,25,1729,0.0828375503022,1,GOE contrast ensemble
+h026_m60_s15,gue,0.1,8,50,60,15,1730,0.120581136461,1,GUE sine-kernel comparison
+h026_m60_s15,goe,0.1,8,50,60,15,1729,0.11043106431,1,GOE contrast ensemble
+h026_m60_s25,gue,0.1,8,50,60,25,1730,0.0775346179758,1,GUE sine-kernel comparison
+h026_m60_s25,goe,0.1,8,50,60,25,1729,0.0960440650009,1,GOE contrast ensemble
+h026_m80_s15,gue,0.1,8,50,80,15,1730,0.109533542541,1,GUE sine-kernel comparison
+h026_m80_s15,goe,0.1,8,50,80,15,1729,0.128722423141,1,GOE contrast ensemble
+h026_m80_s25,gue,0.1,8,50,80,25,1730,0.0885798020952,1,GUE sine-kernel comparison
+h026_m80_s25,goe,0.1,8,50,80,25,1729,0.0998019166514,1,GOE contrast ensemble
+h026_m120_s15,gue,0.1,8,50,120,15,1730,0.0848129603073,1,GUE sine-kernel comparison
+h026_m120_s15,goe,0.1,8,50,120,15,1729,0.0904100475799,1,GOE contrast ensemble
+h026_m120_s25,gue,0.1,8,50,120,25,1730,0.0692508378969,1,GUE sine-kernel comparison
+h026_m120_s25,goe,0.1,8,50,120,25,1729,0.0828375503022,1,GOE contrast ensemble
+h027_m60_s15,gue,0.1,8,100,60,15,1730,0.120581136461,1,GUE sine-kernel comparison
+h027_m60_s15,goe,0.1,8,100,60,15,1729,0.11043106431,1,GOE contrast ensemble
+h027_m60_s25,gue,0.1,8,100,60,25,1730,0.0775346179758,1,GUE sine-kernel comparison
+h027_m60_s25,goe,0.1,8,100,60,25,1729,0.0960440650009,1,GOE contrast ensemble
+h027_m80_s15,gue,0.1,8,100,80,15,1730,0.109533542541,1,GUE sine-kernel comparison
+h027_m80_s15,goe,0.1,8,100,80,15,1729,0.128722423141,1,GOE contrast ensemble
+h027_m80_s25,gue,0.1,8,100,80,25,1730,0.0885798020952,1,GUE sine-kernel comparison
+h027_m80_s25,goe,0.1,8,100,80,25,1729,0.0998019166514,1,GOE contrast ensemble
+h027_m120_s15,gue,0.1,8,100,120,15,1730,0.0848129603073,1,GUE sine-kernel comparison
+h027_m120_s15,goe,0.1,8,100,120,15,1729,0.0904100475799,1,GOE contrast ensemble
+h027_m120_s25,gue,0.1,8,100,120,25,1730,0.0692508378969,1,GUE sine-kernel comparison
+h027_m120_s25,goe,0.1,8,100,120,25,1729,0.0828375503022,1,GOE contrast ensemble

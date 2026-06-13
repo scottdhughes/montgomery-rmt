@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it using this metadata."
+title: "Spectral Bridge: finite pair-sum diagnostics for zeta zeros and the GUE sine kernel"
+type: software
+authors:
+  - family-names: "Hughes"
+    given-names: "Scott D."
+version: 0.1.0
+date-released: 2026-06-13
+license: Apache-2.0
+abstract: "A reproducible finite-block Montgomery--RMT comparison with Lean 4 certificates for finite bookkeeping and interval-supported residual ordering."

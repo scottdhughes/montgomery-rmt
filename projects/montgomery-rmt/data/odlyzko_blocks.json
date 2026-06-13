@@ -1,0 +1,77 @@
+{
+  "blocks": {
+    "first_100k": {
+      "label": "first_100k",
+      "description": "The first 100,000 zeros of the Riemann zeta function.",
+      "zero_index_start": 1,
+      "zero_index_end": 100000,
+      "expected_count": 100000,
+      "source_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/zeros1.gz",
+      "local_path": "data/raw/odlyzko/zeros1.gz",
+      "normalized_csv": "data/raw/zeta_zeros_first_100k.csv",
+      "default_enabled": false,
+      "precision_note": "Odlyzko table index states accuracy within 3e-9.",
+      "notes": "One ordinate per line. Gzip-compressed text source."
+    },
+    "first_2001052": {
+      "label": "first_2001052",
+      "description": "The first 2,001,052 zeros of the Riemann zeta function.",
+      "zero_index_start": 1,
+      "zero_index_end": 2001052,
+      "expected_count": 2001052,
+      "source_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/zeros6.gz",
+      "local_path": "data/raw/odlyzko/zeros6.gz",
+      "normalized_csv": "data/raw/zeta_zeros_first_2001052.csv",
+      "default_enabled": false,
+      "precision_note": "Odlyzko table index and Sage package documentation state accuracy within about 4e-9.",
+      "notes": "One ordinate per line. Gzip-compressed text source; this is intentionally not downloaded in default runs."
+    },
+    "block_1e12_10k": {
+      "label": "block_1e12_10k",
+      "description": "Zeros numbered 10^12 + 1 through 10^12 + 10^4.",
+      "zero_index_start": 1000000000001,
+      "zero_index_end": 1000000010000,
+      "expected_count": 10000,
+      "source_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/zeros3",
+      "local_path": "data/raw/odlyzko/zeros3",
+      "normalized_csv": "data/raw/zeta_zeros_block_1e12_10k.csv",
+      "default_enabled": false,
+      "precision_note": "Odlyzko table header states values are guaranteed accurate only within 1e-8.",
+      "offset_base": "267653395647",
+      "notes": "Rows are offsets from gamma base 267653395647 after a header."
+    },
+    "block_1e21_10k": {
+      "label": "block_1e21_10k",
+      "description": "Zeros numbered 10^21 + 1 through 10^21 + 10^4.",
+      "zero_index_start": 1000000000000000000001,
+      "zero_index_end": 1000000000000000010000,
+      "expected_count": 10000,
+      "source_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/zeros4",
+      "local_path": "data/raw/odlyzko/zeros4",
+      "normalized_csv": "data/raw/zeta_zeros_block_1e21_10k.csv",
+      "default_enabled": false,
+      "precision_note": "Odlyzko table header says values are not guaranteed and are probably accurate within 1e-6.",
+      "offset_base": "144176897509546973000",
+      "notes": "Rows are offsets from gamma base 144176897509546973000 after a header."
+    },
+    "block_1e22_10k": {
+      "label": "block_1e22_10k",
+      "description": "Zeros numbered 10^22 + 1 through 10^22 + 10^4.",
+      "zero_index_start": 10000000000000000000001,
+      "zero_index_end": 10000000000000000010000,
+      "expected_count": 10000,
+      "source_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/zeros5",
+      "local_path": "data/raw/odlyzko/zeros5",
+      "normalized_csv": "data/raw/zeta_zeros_block_1e22_10k.csv",
+      "default_enabled": false,
+      "precision_note": "Odlyzko table header says values are not guaranteed and are probably accurate within 1e-6.",
+      "offset_base": "1370919909931995300000",
+      "notes": "Rows are offsets from gamma base 1370919909931995300000 after a header."
+    }
+  },
+  "source_index_url": "http://www.dtc.umn.edu/~odlyzko/zeta_tables/index.html",
+  "notes": [
+    "No block is downloaded by default.",
+    "High-block tables store offsets from a stated gamma base; normalization must preserve small adjacent differences."
+  ]
+}
